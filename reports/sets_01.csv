@@ -1,0 +1,11 @@
+set,file,rows_total,benign,injected,published_benign,published_injected,tasks,median_chars,sha256
+adclean,data/public/sets/adclean.jsonl,339,339,0,339.0,0.0,97,169,f16bc3fa9ed748956e014a156ebd04040953856b96a1527f5f72e985ec66b7a6
+admatched,data/public/sets/admatched.jsonl,1017,585,432,585.0,432.0,97,240,a125538e3838d467cec7076177bbf738af211dc14c1794ec60e9b5e930040a81
+adshift,data/public/sets/adshift.jsonl,1695,975,720,975.0,720.0,97,250,03b5aa0a6e0766592cdebc11cd5d0c040370bb65496a30d8bd48f0cc5f3131ac
+bipia_pairs,data/public/sets/bipia_pairs.jsonl,6000,1200,2435,1200.0,2435.0,1200,1338,92a5956be69448f4aef293a6fabe5fc4b2490ddfb33c9d4184da7628aded0a91
+tbeval,data/public/sets/tbeval.jsonl,2117,1533,584,1533.0,584.0,675,1184,212ff82a452caa8adbd24a4891253c0956ae55756f3c8c8d5065b91a9eb622b4
+ours_bipia,data/public/sets/ours_bipia.jsonl,988,778,210,,,988,1378,af0326b743f52a3c79b24fe3f8702c8860bb4e87ac3a5bf87e684028b82087a7
+ours_opi,data/public/sets/ours_opi.jsonl,1800,900,900,,,6,301,e07b8519c6715e0cd68faed131dc2121d44368e3d908c6ff045225b4eb45dbe8
+ours_agentdojo,data/public/sets/ours_agentdojo.jsonl,1647,129,1518,,,4,704,995ff3aed91c95a970ccac04bb5e4a1d538b80e01e1d3c6a4847c586c767d1c4
+ours_notinject,data/public/sets/ours_notinject.jsonl,339,339,0,,,339,90,8cb673848c412eeb281664e06fccc3850b60cc6e5f144c6283c502419fa6d7d5
+ours_recipes,data/public/sets/ours_recipes.jsonl,500,500,0,,,500,778,590a14a15626fb6d22bcd5ef4945840e8e6e6451f6a211a3c627206d641ccc42

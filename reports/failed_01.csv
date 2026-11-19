@@ -1,0 +1,21 @@
+detector,set,error
+qualifire-sentinel,adclean,"OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/qualifire/prompt-injection-sentinel.
+403 Client Error. (Request "
+protectai-small-v2,adclean,"OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/protectai/deberta-v3-small-prompt-injection-v2.
+403 Client Error"
+wani-full-s0:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-full-s0:win,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-full-s1:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-full-s1:win,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-full-s2:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-full-s2:win,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-notwin:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-notwin:win,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-sizematched:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-sizematched:win,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-aug:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-aug:win,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-conventional:trunc,adclean,AttributeError: 'list' object has no attribute 'keys'
+wani-conventional:win,adclean,AttributeError: 'list' object has no attribute 'keys'

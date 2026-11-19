@@ -1,0 +1,42 @@
+{
+ "detector": "horizon-base",
+ "detector_name": "Horizon-Labs (Oct 2026 weights)",
+ "note": "",
+ "sets": {
+  "adclean": {
+   "file": "data/public/sets/adclean.jsonl",
+   "sha256": "f16bc3fa9ed748956e014a156ebd04040953856b96a1527f5f72e985ec66b7a6"
+  },
+  "admatched": {
+   "file": "data/public/sets/admatched.jsonl",
+   "sha256": "a125538e3838d467cec7076177bbf738af211dc14c1794ec60e9b5e930040a81"
+  },
+  "adshift": {
+   "file": "data/public/sets/adshift.jsonl",
+   "sha256": "03b5aa0a6e0766592cdebc11cd5d0c040370bb65496a30d8bd48f0cc5f3131ac"
+  }
+ },
+ "rule": "threshold on the evaluated set's benign scores (Liu); caught_guar at the guaranteed threshold reported beside it",
+ "admatched": {
+  "caught_liu": 0.8425925925925926,
+  "caught_liu_lo": 0.7395543981481482,
+  "caught_liu_hi": 0.9041030252720901,
+  "caught_guar": 0.8425925925925926,
+  "caught_guar_lo": 0.728878587196468,
+  "caught_guar_hi": 0.8997617218228052,
+  "auroc": 0.9190527065527067
+ },
+ "adshift": {
+  "caught_liu": 0.8777777777777778,
+  "caught_liu_lo": 0.8105795730327835,
+  "caught_liu_hi": 0.9348373015873015,
+  "caught_guar": 0.8777777777777778,
+  "caught_guar_lo": 0.8105795730327835,
+  "caught_guar_hi": 0.9344103703703703,
+  "auroc": 0.9199857549857549
+ },
+ "adclean": {
+  "fpr_0_5": 0.0,
+  "block_rate_0_5": 0.0
+ }
+}
