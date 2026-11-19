@@ -73,12 +73,30 @@ def positive_index(model):
     return model.config.num_labels - 1
 
 
+def load_tokenizer(src, revision=None, local=False):
+    """A tokenizer saved by a newer transformers may not load in this one. This project's fine-tunes added no tokens,
+    so for a local model directory the base tokenizer named in its config is identical and is used instead."""
+    from transformers import AutoConfig, AutoTokenizer
+    try:
+        return AutoTokenizer.from_pretrained(src, revision=revision), None
+    except Exception as e:
+        if not local:
+            raise
+        cfg = AutoConfig.from_pretrained(src)
+        base = str(getattr(cfg, "_name_or_path", "") or "")
+        base = base if ("/" in base and not os.path.isdir(base)) else "microsoft/deberta-v3-base"
+        tok = AutoTokenizer.from_pretrained(base)
+        return tok, f"{base} (saved tokenizer failed: {type(e).__name__}: {str(e)[:80]})"
+
+
 def run_cls(repo, max_len, remote, texts, revision=None, local_dir=None):
     import torch
-    from transformers import AutoModelForSequenceClassification, AutoTokenizer
+    from transformers import AutoModelForSequenceClassification
     dev = device(); src = local_dir or repo
-    tok = AutoTokenizer.from_pretrained(src, revision=revision)
+    tok, tok_note = load_tokenizer(src, revision, local=bool(local_dir))
     model = AutoModelForSequenceClassification.from_pretrained(src, trust_remote_code=remote, revision=revision).to(dev).eval()
+    if local_dir:
+        assert len(tok) <= model.config.vocab_size, "tokenizer and model vocabularies do not match"
     if model.config.pad_token_id is None and tok.pad_token_id is not None:
         model.config.pad_token_id = tok.pad_token_id
     idx = 1 if local_dir else positive_index(model)
@@ -92,16 +110,17 @@ def run_cls(repo, max_len, remote, texts, revision=None, local_dir=None):
             enc.pop("token_type_ids", None)
         with torch.no_grad():
             probs.extend(torch.softmax(model(**enc).logits.float(), -1)[:, idx].cpu().tolist())
-    return probs, trunc / max(len(texts), 1), {"positive_index": idx, "id2label": {str(k): str(v) for k, v in (model.config.id2label or {}).items()}}
+    return probs, trunc / max(len(texts), 1), {"positive_index": idx, "id2label": {str(k): str(v) for k, v in (dict(model.config.id2label) if model.config.id2label else {}).items()},
+                                               "commit_hash": getattr(model.config, "_commit_hash", None), "tokenizer_fallback": tok_note}
 
 
 def run_segmented(repo, max_len, texts, pg1=False, local_dir=None, idx=None):
     """Prompt Guard cards: 512-token window; longer inputs split into segments, maximum score kept.
     Also the windowed rule for this project's DeBERTa models (local_dir, idx=1)."""
     import torch
-    from transformers import AutoModelForSequenceClassification, AutoTokenizer
+    from transformers import AutoModelForSequenceClassification
     dev = device(); src = local_dir or repo
-    tok = AutoTokenizer.from_pretrained(src)
+    tok, tok_note = load_tokenizer(src, None, local=bool(local_dir))
     model = AutoModelForSequenceClassification.from_pretrained(src).to(dev).eval()
     if idx is None:
         idx = positive_index(model)
@@ -122,7 +141,8 @@ def run_segmented(repo, max_len, texts, pg1=False, local_dir=None, idx=None):
             s = (p[:, 1] + p[:, 2]) if pg1 else p[:, idx]
             best = max(best, s.max().item())
         probs.append(best)
-    return probs, trunc / max(len(texts), 1), {"positive_index": idx, "rule": "max over windows"}
+    return probs, trunc / max(len(texts), 1), {"positive_index": idx, "rule": "max over windows",
+                                               "commit_hash": getattr(model.config, "_commit_hash", None), "tokenizer_fallback": tok_note}
 
 
 def source_type(r):
@@ -169,7 +189,7 @@ def run_sheltron(repo, max_len, rows):
                 z = model(input_ids=torch.tensor([seq], device=dev), attention_mask=torch.ones((1, len(seq)), dtype=torch.long, device=dev)).logits[0, 0]
             best = max(best, torch.sigmoid(z.float()).item())
         probs.append(best)
-    return probs, trunc / max(len(rows), 1), {"rule": "sheltron documented input"}
+    return probs, trunc / max(len(rows), 1), {"rule": "sheltron documented input", "commit_hash": getattr(model.config, "_commit_hash", None)}
 
 
 def run_prismor(repo, max_len, texts):
@@ -195,7 +215,7 @@ def run_prismor(repo, max_len, texts):
             lp = torch.log_softmax(model(**x).logits[0, -1].float(), -1)
         a, b = lp[inj].exp().item(), lp[safe].exp().item()
         probs.append(a / (a + b + 1e-12))
-    return probs, trunc / max(len(texts), 1), {"rule": "P(INJECTION) / (P(INJECTION) + P(SAFE))"}
+    return probs, trunc / max(len(texts), 1), {"rule": "P(INJECTION) / (P(INJECTION) + P(SAFE))", "commit_hash": getattr(model.config, "_commit_hash", None)}
 
 
 def model_dir_for(name):
@@ -234,7 +254,8 @@ def score_cached(detector: str, set_name: str, rows: list, cache_dir: str, set_h
     if os.path.exists(out):
         return json.load(open(out))
     base = detector.partition(":")[0]
-    if base in NEEDS_NEW_TRANSFORMERS:
+
+    def in_second_env():
         import subprocess, tempfile
         tmp = tempfile.NamedTemporaryFile("w", suffix=".jsonl", delete=False)
         for r in rows:
@@ -245,9 +266,22 @@ def score_cached(detector: str, set_name: str, rows: list, cache_dir: str, set_h
                            env=dict(os.environ, SET_HASH=set_hash, SET_NAME=set_name))
         os.unlink(tmp.name)
         if r.returncode != 0 or not os.path.exists(out):
-            raise RuntimeError(r.stderr[-1500:])
+            raise RuntimeError(r.stderr[-2500:])
         return json.load(open(out))
-    probs, trunc, meta = score_rows(detector, rows)
+
+    if base in NEEDS_NEW_TRANSFORMERS:
+        return in_second_env()
+    try:
+        probs, trunc, meta = score_rows(detector, rows)
+    except Exception as e:
+        if base in OURS and python_for_new_transformers:
+            import traceback
+            first = traceback.format_exc()
+            rec = in_second_env()
+            rec["meta"]["scored_in_second_environment_because"] = first[-1500:]
+            json.dump(rec, open(out, "w"))
+            return rec
+        raise
     rec = dict(detector=detector, set=set_name, set_hash=set_hash, n=len(rows), probs=[float(p) for p in probs],
                labels=[int(r["label"]) for r in rows] if rows and "label" in rows[0] else None, truncated=float(trunc), meta=meta)
     json.dump(rec, open(out, "w"))
