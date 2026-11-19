@@ -1,0 +1,126 @@
+{
+ "source_repository": "anasbiswas1/picalib-research",
+ "source_commit": "4b24985411ca33696e96595722babd6a71c845c7",
+ "files": {
+  "structural/train.jsonl": {
+   "sha256": "74e5bdc06b689c7710c1846f69853ba7b7b43be27065aa8740c3c183869163cd",
+   "bytes": 13308545
+  },
+  "structural/val.jsonl": {
+   "sha256": "d9bf6bcf0dde82c1bf5c226b11b039e609edec0000f9d36447f1e3d79c86a9e5",
+   "bytes": 1708077
+  },
+  "structural/test.jsonl": {
+   "sha256": "c79c04ae43fdeab271e6a343bb6659051bd5679a458074e13bd575cf13e6f65d",
+   "bytes": 3523174
+  },
+  "opi/opi_eval.json": {
+   "sha256": "1110b98ad7367418d3f7bc48e6daade4e47ed34a5465f052b984da6a980d2421",
+   "bytes": 790470
+  },
+  "agentdojo/set.json": {
+   "sha256": "d87be4a2d6c6af6abf1fe56d5b0a2214793118970fb48efd587b7fbf549cf3ac",
+   "bytes": 1923239
+  },
+  "phase5v2/subset.json": {
+   "sha256": "ece7725e8e7cca6f80a67d8c511d443d4c56708ee1d6cc76eafbbdb1cf89ee31",
+   "bytes": 160334
+  },
+  "phase5v2/rewrites.json": {
+   "sha256": "2425a053c28636f0c4a3f793a7021431e065b982dae8b30f0142632b678925dc",
+   "bytes": 198871
+  },
+  "phase5v2/exec_out.json": {
+   "sha256": "778060ac10ccaf6f0a2a93f0d4f036f935bf30199fcc314365dce42ed8124150",
+   "bytes": 243216
+  },
+  "phase5v2/judge_7b.json": {
+   "sha256": "1cc93f637e1bdbb211fd53de98a9ed7547276bc8bb8a03ddf011b2053be76cb4",
+   "bytes": 7449
+  },
+  "closers/howto.json": {
+   "sha256": "bdc08c2a9e08c606b889aeceb242cb33bd3977f89c3d0852537f4454a880bc94",
+   "bytes": 422809
+  },
+  "phase5v3/rewrites_full.json": {
+   "sha256": "dba4cd07739e443e9b4836ab38d197f3708db6a423d470b8c4573fc3ca85358a",
+   "bytes": 453832
+  },
+  "phase5v3/rewrites_extra.json": {
+   "sha256": "0190b561543e5d22d0bea73c7428632c3e234ba895bec3ef1b5abe22c848dea9",
+   "bytes": 929551
+  }
+ },
+ "models": {
+  "full": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  },
+  "full_seed1": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  },
+  "full_seed2": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  },
+  "ablation_no_twins": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  },
+  "full_sizematched": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  },
+  "full_aug": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  },
+  "conventional_ft": {
+   "config_sha256": "16e3ada98b92058c99983963ffe318590100391d0ba89d5207eacefab16563ab",
+   "files": [
+    "config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+   ]
+  }
+ }
+}
