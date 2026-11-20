@@ -11,6 +11,30 @@ tbeval                 best released: Horizon-Labs (Oct 2026 weights) caught 1.0
 
 released detectors at or above 0.90 on the BIPIA pairs and 0.80 on AD-Matched (Liu rule): none
 
+this project's guard (seed 0, windowed):
+  ours_bipia:hijack      caught 0.887 [0.832, 0.938]  AUROC 0.964
+  ours_bipia:harmful     caught 1.000 [0.984, 1.000]  AUROC 1.000
+  ours_opi               caught 0.973 [0.960, 0.984]  AUROC 0.995
+  ours_agentdojo:all     caught 0.169 [0.151, 0.193]  AUROC 0.832
+  admatched              caught 0.329 [0.280, 0.385]  AUROC 0.660
+  adshift                caught 0.282 [0.235, 0.342]  AUROC 0.652
+  bipia_pairs            caught 0.638 [0.617, 0.658]  AUROC 0.756
+  tbeval                 caught 0.464 [0.384, 0.597]  AUROC 0.915
+
+difference ours minus Wolf Defender, caught at 1 percent (Liu rule), cluster bootstrap:
+  admatched      -0.553 [-0.612, -0.492]
+  adshift        -0.600 [-0.668, -0.531]
+  bipia_pairs    -0.197 [-0.219, -0.172]
+  tbeval         -0.536 [-0.616, -0.403]
+
+difference ours minus Horizon-Labs (Oct 2026 weights), caught at 1 percent (Liu rule), cluster bootstrap:
+  admatched      -0.514 [-0.579, -0.410]
+  adshift        -0.596 [-0.662, -0.522]
+  bipia_pairs    +0.261 [+0.206, +0.325]
+  tbeval         -0.536 [-0.616, -0.403]
+
+identification interval of the 1 percent threshold for this guard: AD-Matched (585 benign) width 0.021; notebook 25 set (129 benign) width 0.005
+
 injection slots caught at 1 percent (Liu rule) on AD-Matched and AD-Shift (144 slots each):
   ProtectAI v1                         slots caught: matched   9, shift  35, both   9
   ProtectAI v2                         slots caught: matched  12, shift   8, both   8
@@ -27,6 +51,7 @@ injection slots caught at 1 percent (Liu rule) on AD-Matched and AD-Shift (144 s
   TestSavant L                         slots caught: matched  71, shift  49, both  46
   InjecGuard                           slots caught: matched   9, shift  34, both   9
   JasperLS                             slots caught: matched  40, shift  40, both  39
+  Matched-pair guard (seed 0), windowed slots caught: matched  80, shift  76, both  72
 
 strongest released guard overall: Wolf Defender (mean caught 0.828); its numbers are the bar for notebook 03:
   ours_bipia:hijack      caught 0.920 [0.874, 0.959]  AUROC 0.993
@@ -38,4 +63,4 @@ strongest released guard overall: Wolf Defender (mean caught 0.828); its numbers
   bipia_pairs            caught 0.835 [0.814, 0.850]  AUROC 0.956
   tbeval                 caught 1.000 [1.000, 1.000]  AUROC 1.000
 
-failed detectors: ['protectai-small-v2', 'qualifire-sentinel', 'wani-aug:trunc', 'wani-aug:win', 'wani-conventional:trunc', 'wani-conventional:win', 'wani-full-s0:trunc', 'wani-full-s0:win', 'wani-full-s1:trunc', 'wani-full-s1:win', 'wani-full-s2:trunc', 'wani-full-s2:win', 'wani-notwin:trunc', 'wani-notwin:win', 'wani-sizematched:trunc', 'wani-sizematched:win']
+failed detectors: ['protectai-small-v2', 'qualifire-sentinel']

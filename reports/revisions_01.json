@@ -88,5 +88,54 @@
   "pinned_revision": null,
   "commit_hash_at_load": [],
   "commit_hash_resolved_after_scoring": "e44351e2ce3be04c5325f041124d8f49439abf7e"
+ },
+ "wani-full-s0": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_full/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
+ },
+ "wani-full-s1": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_full_seed1/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
+ },
+ "wani-full-s2": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_full_seed2/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
+ },
+ "wani-notwin": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_ablation_no_twins/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
+ },
+ "wani-sizematched": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_full_sizematched/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
+ },
+ "wani-aug": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_full_aug/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
+ },
+ "wani-conventional": {
+  "model_dir": "/content/drive/MyDrive/PICALIB_Research/picalib-research/data/structural/model_conventional_ft/best",
+  "tokenizer_fallback": [
+   "microsoft/deberta-v3-base (saved tokenizer failed: AttributeError: 'list' object has no attribute 'keys')"
+  ],
+  "second_environment": false
  }
 }

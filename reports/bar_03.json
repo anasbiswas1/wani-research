@@ -316,5 +316,94 @@
    "block_rate_0_5": 0.0
   }
  },
- "this_guard_seed0_windowed": null
+ "this_guard_seed0_windowed": {
+  "ours_bipia:hijack": {
+   "caught_liu": 0.8866666666666667,
+   "caught_liu_lo": 0.8323015939951084,
+   "caught_liu_hi": 0.9375192901234568,
+   "caught_guar": 0.8866666666666667,
+   "caught_guar_lo": 0.8323015939951084,
+   "caught_guar_hi": 0.9366417253521127,
+   "auroc": 0.9643101970865466
+  },
+  "ours_bipia:harmful": {
+   "caught_liu": 1.0,
+   "caught_liu_lo": 0.9838431590656285,
+   "caught_liu_hi": 1.0,
+   "caught_guar": 1.0,
+   "caught_guar_lo": 0.9629629629629629,
+   "caught_guar_hi": 1.0,
+   "auroc": 0.9999143101970865
+  },
+  "ours_opi": {
+   "caught_liu": 0.9733333333333334,
+   "caught_liu_lo": 0.9599066114761131,
+   "caught_liu_hi": 0.9843439467249363,
+   "caught_guar": 0.9722222222222222,
+   "caught_guar_lo": 0.9578091123709188,
+   "caught_guar_hi": 0.9834443927535439,
+   "auroc": 0.9954160493827161
+  },
+  "ours_agentdojo:all": {
+   "caught_liu": 0.16930171277997366,
+   "caught_liu_lo": 0.15114920350302746,
+   "caught_liu_hi": 0.19260139639948587,
+   "caught_guar": 0.16930171277997366,
+   "caught_guar_lo": 0.15091211665975962,
+   "caught_guar_hi": 0.19025691391857977,
+   "auroc": 0.8321945440246754
+  },
+  "admatched": {
+   "caught_liu": 0.3287037037037037,
+   "caught_liu_lo": 0.2802394590974508,
+   "caught_liu_hi": 0.3852046783625731,
+   "caught_guar": 0.3287037037037037,
+   "caught_guar_lo": 0.2802394590974508,
+   "caught_guar_hi": 0.37923542790648473,
+   "auroc": 0.6602564102564102
+  },
+  "adshift": {
+   "caught_liu": 0.28194444444444444,
+   "caught_liu_lo": 0.23476410730804811,
+   "caught_liu_hi": 0.34185421036859454,
+   "caught_guar": 0.28194444444444444,
+   "caught_guar_lo": 0.23476410730804811,
+   "caught_guar_hi": 0.3302658382066277,
+   "auroc": 0.6523148148148148
+  },
+  "bipia_pairs": {
+   "caught_liu": 0.637782340862423,
+   "caught_liu_lo": 0.6171618992895069,
+   "caught_liu_hi": 0.658233995750548,
+   "caught_guar": 0.6373716632443532,
+   "caught_guar_lo": 0.6170366181589693,
+   "caught_guar_hi": 0.6578712690796732,
+   "auroc": 0.7559483230663928
+  },
+  "tbeval": {
+   "caught_liu": 0.464041095890411,
+   "caught_liu_lo": 0.3835203332482125,
+   "caught_liu_hi": 0.5972348484848484,
+   "caught_guar": 0.4332191780821918,
+   "caught_guar_lo": 0.33854337908926513,
+   "caught_guar_hi": 0.560125612745098,
+   "auroc": 0.914981145394919
+  },
+  "adclean_clean": {
+   "fpr_0_5": 0.0,
+   "block_rate_0_5": 0.0
+  },
+  "tbeval_clean": {
+   "fpr_0_5": 0.0,
+   "block_rate_0_5": 0.0
+  },
+  "ours_notinject_clean": {
+   "fpr_0_5": 0.0,
+   "block_rate_0_5": 0.0
+  },
+  "ours_recipes_clean": {
+   "fpr_0_5": 0.0,
+   "block_rate_0_5": 0.0
+  }
+ }
 }
