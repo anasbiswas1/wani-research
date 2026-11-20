@@ -1,0 +1,9 @@
+set,file,rows,label1,label0,embedded,standalone,host_only,declarative_insert,content_imperative_insert,median_chars,sha256
+structural_train,PICALIB_Research/picalib-research/data/structural/train.jsonl,17316,8999,8317,8999,1570,2250,2248,2249,479,74e5bdc06b689c7710c1846f69853ba7b7b43be27065aa8740c3c183869163cd
+structural_val,PICALIB_Research/picalib-research/data/structural/val.jsonl,2244,1200,1044,1200,151,300,296,297,471,d9bf6bcf0dde82c1bf5c226b11b039e609edec0000f9d36447f1e3d79c86a9e5
+agent_train,WANI_Research/wani-research/data/continued/sets/agent_train.jsonl,6432,3000,3432,3000,1182,750,750,750,361,f2dfaae46d8593bbe5ecef6063dca80eaedd3196779dac750f3bfa33bc0b09df
+agent_val,WANI_Research/wani-research/data/continued/sets/agent_val.jsonl,1403,600,803,600,353,150,150,150,371,c8092c9f422c1cccfe657aa6dd20e7be48f23e50a306c0d27d3fb7ef8bcd6c37
+train_twin,WANI_Research/wani-research/data/continued/sets/train_twin.jsonl,23748,11999,11749,11999,2752,3000,2998,2999,424,9d3b9d2e374ec373249e7f75659a19a11a3c17f2dbcb0e2a8228302e953d1c76
+train_notwin,WANI_Research/wani-research/data/continued/sets/train_notwin.jsonl,17997,11999,5998,11999,0,3000,2998,0,464,11ccd51a7ab0c5e4129065bfd048461e91dba5fec20127c94d73637b2c7a4527
+train_sizematched,WANI_Research/wani-research/data/continued/sets/train_sizematched.jsonl,17998,11999,5999,11999,1405,1532,1531,1531,441,888451cd84c347140624e082b4f8063ff2cf9c3f5337971395fead25b6628fdb
+val_pack,WANI_Research/wani-research/data/continued/sets/val.jsonl,3647,1800,1847,1800,504,450,446,447,417,be13eea09ea0c6aa341c20241b18ce251df689e232b0fe60d3d774ccc35baaf2

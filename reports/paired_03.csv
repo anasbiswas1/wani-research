@@ -1,0 +1,81 @@
+model,model_name,against,against_name,set,diff,lo,hi
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),ours_bipia:hijack,0.006666666666666599,0.0,0.021428571428571463
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),ours_opi,0.35,0.20799597974839504,0.41214921231937485
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.92819617519327,-0.8968179904574797
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),admatched,-0.8819444444444444,-0.9109627092846271,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),adshift,-0.8819444444444444,-0.9109627092846271,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),bipia_pairs,0.03655030800821357,0.024106400665004243,0.053117701420519844
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),ours_bipia:hijack,0.006666666666666599,0.0,0.021428571428571463
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),ours_bipia:harmful,0.0,0.0,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),ours_opi,-0.07000000000000006,-0.15948177676537592,-0.02521708804078253
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),ours_agentdojo:all,0.0,0.0,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),admatched,0.0,0.0,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),adshift,0.0,0.0,0.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),bipia_pairs,-0.0353182751540041,-0.05525282966035018,-0.023785214725453793
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),tbeval,0.0,0.0,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),ours_bipia:hijack,0.0,0.0,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),ours_opi,0.42000000000000004,0.34061235605353246,0.4843754204790096
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.9302647076799496,-0.9009186351706037
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),admatched,-0.8819444444444444,-0.9109627092846271,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),adshift,-0.8819444444444444,-0.9109627092846271,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),bipia_pairs,0.07186858316221767,0.05791935652663041,0.09574635817186261
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),ours_bipia:hijack,-0.01333333333333342,-0.037887232194557,0.021428571428571463
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),ours_opi,0.3077777777777778,0.19764516129032253,0.3797371045138251
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.92819617519327,-0.8968179904574797
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),admatched,-0.18287037037037035,-0.22058911694174071,0.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),adshift,-0.14722222222222214,-0.16945175438596496,0.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),bipia_pairs,0.03655030800821357,0.02306677395627014,0.05407383672332124
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),ours_bipia:hijack,0.0,0.0,0.016403774624603948
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),ours_opi,0.4077777777777778,0.22943983859322112,0.4805451869215857
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.9302647076799496,-0.9009186351706037
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),admatched,-0.16203703703703698,-0.1995464852607709,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),adshift,-0.1069444444444444,-0.1298768012809108,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),bipia_pairs,0.04599589322381936,0.027608260408911848,0.06399801919047855
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),ours_bipia:hijack,0.0,0.0,0.016403774624603948
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),ours_bipia:harmful,0.0,0.0,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),ours_opi,-0.010000000000000009,-0.16214159338240444,0.041065615115896216
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),ours_agentdojo:all,0.0,0.0,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),admatched,-0.1157407407407407,-0.1442080378250591,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),adshift,-0.061111111111111116,-0.08311896103896096,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),bipia_pairs,-0.029568788501026733,-0.046136114872622196,-0.015042468788198208
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),tbeval,0.0,0.0,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),ours_bipia:hijack,0.0,0.0,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),ours_opi,0.4177777777777778,0.35178277371313843,0.486315489474743
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.9302647076799496,-0.9009186351706037
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),admatched,-0.04629629629629628,-0.0631808278867102,0.021586643728495437
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),adshift,-0.04583333333333328,-0.06274509803921569,0.021586643728495437
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),bipia_pairs,0.0755646817248461,0.05685377243300617,0.09512089304511429
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),ours_bipia:hijack,0.0,-0.012662284972411621,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),ours_opi,0.40555555555555556,0.33400387267210785,0.46353739449061043
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.9291803278688524,-0.9001920551543008
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),admatched,-0.33564814814814814,-0.37702713516659386,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),adshift,-0.2958333333333333,-0.34146428571428583,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),bipia_pairs,0.06324435318275157,0.025579518552525236,0.08714294328336615
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),ours_bipia:hijack,0.026666666666666727,0.0,0.051948051948051965
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),ours_bipia:harmful,0.0,0.0,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),ours_opi,0.10111111111111115,0.0033638218033466257,0.15180564958481294
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),ours_agentdojo:all,0.0,0.0,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),admatched,-0.1782407407407408,-0.21399461170030792,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),adshift,-0.18888888888888888,-0.2295514399796109,0.00300808840282522
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),bipia_pairs,0.04928131416837778,0.010765148556549118,0.07638939449447199
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),tbeval,0.0,0.0,0.0
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),ours_bipia:hijack,-0.026666666666666727,-0.05264912280701759,0.0
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),ours_bipia:harmful,0.0,0.0,0.0
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),ours_opi,0.3044444444444444,0.24771418039454954,0.4076430292488715
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),ours_agentdojo:all,-0.9150197628458498,-0.9302647076799496,-0.9009186351706037
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),admatched,-0.15740740740740733,-0.19800006773690979,0.01587941628264203
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),adshift,-0.1069444444444444,-0.1333333333333333,0.01587941628264203
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),bipia_pairs,0.01396303901437379,-0.012664436676309935,0.05105428573829115
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender (released),tbeval,0.0,0.0,0.0

@@ -1,0 +1,81 @@
+Notebook 03: continued training of Wolf Defender on the matched-pair construction. Decision: DOES NOT CLOSE THE BLIND SPOT
+Twin claim: TWINS DO NOT SEPARATE
+
+base patronus-studio/wolf-defender-prompt-injection @ af0b16a1d40ca246595e48246ccf9f906a52a50e; decision read on Wolf Defender + matched pairs (seed 0); Liu rule (threshold on the evaluated benign set); paired cluster bootstraps
+
+--- Wolf Defender + matched pairs (seed 0): fails M1, M2
+  M1 FAIL: second source caught 0.797 (target 0.9); minus released +0.350 [+0.208, +0.412]
+  M2 FAIL: admatched 0.000 vs 0.882, diff -0.882 [-0.911, +0.000] FAIL; adshift 0.000 vs 0.882, diff -0.882 [-0.911, +0.000] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 pass: bipia_pairs 0.871 vs 0.835, diff +0.037 [+0.024, +0.053]; ours_bipia:hijack 0.927 vs 0.920, diff +0.007 [+0.000, +0.021]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.009 (cap 0.01, released 0.000); tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+--- Wolf Defender + no-twin construction (seed 0): fails M1, M2, M4
+  M1 FAIL: second source caught 0.867 (target 0.9); minus released +0.420 [+0.341, +0.484]
+  M2 FAIL: admatched 0.000 vs 0.882, diff -0.882 [-0.911, +0.000] FAIL; adshift 0.000 vs 0.882, diff -0.882 [-0.911, +0.000] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 pass: bipia_pairs 0.907 vs 0.835, diff +0.072 [+0.058, +0.096]; ours_bipia:hijack 0.920 vs 0.920, diff +0.000 [+0.000, +0.000]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.018 (cap 0.01, released 0.000) FAIL; tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.006 (cap 0.01, released 0.000); ours_notinject 0.286 (cap 0.05, released 0.029) FAIL
+--- Wolf Defender + size-matched construction (seed 0): fails M1, M2
+  M1 FAIL: second source caught 0.754 (target 0.9); minus released +0.308 [+0.198, +0.380]
+  M2 FAIL: admatched 0.699 vs 0.882, diff -0.183 [-0.221, +0.000] FAIL; adshift 0.735 vs 0.882, diff -0.147 [-0.169, +0.000] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 pass: bipia_pairs 0.871 vs 0.835, diff +0.037 [+0.023, +0.054]; ours_bipia:hijack 0.907 vs 0.920, diff -0.013 [-0.038, +0.021]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.009 (cap 0.01, released 0.000); tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+--- Wolf Defender + matched pairs (seed 1): fails M1, M2, M4
+  M1 FAIL: second source caught 0.854 (target 0.9); minus released +0.408 [+0.229, +0.481]
+  M2 FAIL: admatched 0.720 vs 0.882, diff -0.162 [-0.200, +0.000] FAIL; adshift 0.775 vs 0.882, diff -0.107 [-0.130, +0.000] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 pass: bipia_pairs 0.881 vs 0.835, diff +0.046 [+0.028, +0.064]; ours_bipia:hijack 0.920 vs 0.920, diff +0.000 [+0.000, +0.016]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.012 (cap 0.01, released 0.000) FAIL; tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+--- Wolf Defender + no-twin construction (seed 1): fails M1, M2, M4
+  M1 FAIL: second source caught 0.864 (target 0.9); minus released +0.418 [+0.352, +0.486]
+  M2 FAIL: admatched 0.836 vs 0.882, diff -0.046 [-0.063, +0.022] FAIL; adshift 0.836 vs 0.882, diff -0.046 [-0.063, +0.022] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 pass: bipia_pairs 0.910 vs 0.835, diff +0.076 [+0.057, +0.095]; ours_bipia:hijack 0.920 vs 0.920, diff +0.000 [+0.000, +0.000]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.012 (cap 0.01, released 0.000) FAIL; tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.124 (cap 0.05, released 0.029) FAIL
+--- Wolf Defender + matched pairs (seed 2): fails M1, M2
+  M1 FAIL: second source caught 0.852 (target 0.9); minus released +0.406 [+0.334, +0.464]
+  M2 FAIL: admatched 0.546 vs 0.882, diff -0.336 [-0.377, +0.000] FAIL; adshift 0.586 vs 0.882, diff -0.296 [-0.341, +0.000] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 pass: bipia_pairs 0.898 vs 0.835, diff +0.063 [+0.026, +0.087]; ours_bipia:hijack 0.920 vs 0.920, diff +0.000 [-0.013, +0.000]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.009 (cap 0.01, released 0.000); tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+--- Wolf Defender + no-twin construction (seed 2): fails M1, M2, M3, M4
+  M1 FAIL: second source caught 0.751 (target 0.9); minus released +0.304 [+0.248, +0.408]
+  M2 FAIL: admatched 0.725 vs 0.882, diff -0.157 [-0.198, +0.016] FAIL; adshift 0.775 vs 0.882, diff -0.107 [-0.133, +0.016] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [+0.000, +0.000]
+  M3 FAIL: bipia_pairs 0.849 vs 0.835, diff +0.014 [-0.013, +0.051]; ours_bipia:hijack 0.893 vs 0.920, diff -0.027 [-0.053, +0.000] FAIL; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.015 (cap 0.01, released 0.000) FAIL; tbeval 0.000 (cap 0.01, released 0.000); ours_recipes 0.002 (cap 0.01, released 0.000); ours_notinject 0.289 (cap 0.05, released 0.029) FAIL
+
+T1 twin minus notwin on the second source, paired:
+  seed 0: -0.070 [-0.159, -0.025]
+  seed 1: -0.010 [-0.162, +0.041]
+  seed 2: +0.101 [+0.003, +0.152]
+
+caught at 1 percent false positives (Liu rule), all models:
+set                                                          ours_bipia:hijack  ours_bipia:harmful  ours_opi  ours_agentdojo:all  admatched  adshift  bipia_pairs  tbeval
+detector_name                                                                                                                                                            
+Wolf Defender (released)                                                 0.920                0.95     0.447               0.915      0.882    0.882        0.835   1.000
+Wolf Defender + matched pairs (seed 0)                                   0.927                0.95     0.797               0.000      0.000    0.000        0.871   1.000
+Wolf Defender + no-twin construction (seed 0)                            0.920                0.95     0.867               0.000      0.000    0.000        0.907   1.000
+Wolf Defender + size-matched construction (seed 0)                       0.907                0.95     0.754               0.000      0.699    0.735        0.871   1.000
+Wolf Defender + matched pairs (seed 1)                                   0.920                0.95     0.854               0.000      0.720    0.775        0.881   1.000
+Wolf Defender + no-twin construction (seed 1)                            0.920                0.95     0.864               0.000      0.836    0.836        0.910   1.000
+Wolf Defender + matched pairs (seed 2)                                   0.920                0.95     0.852               0.000      0.546    0.586        0.898   1.000
+Wolf Defender + no-twin construction (seed 2)                            0.893                0.95     0.751               0.000      0.725    0.775        0.849   1.000
+Matched-pair guard, DeBERTa from scratch (seed 0, windowed)              0.887                1.00     0.973               0.169      0.329    0.282        0.638   0.464
+
+false positives at 0.5 on clean outputs:
+set                                                          adclean  ours_notinject  ours_recipes  tbeval
+detector_name                                                                                             
+Wolf Defender (released)                                       0.000           0.029         0.000     0.0
+Wolf Defender + matched pairs (seed 0)                         0.009           0.000         0.000     0.0
+Wolf Defender + no-twin construction (seed 0)                  0.018           0.286         0.006     0.0
+Wolf Defender + size-matched construction (seed 0)             0.009           0.000         0.000     0.0
+Wolf Defender + matched pairs (seed 1)                         0.012           0.000         0.000     0.0
+Wolf Defender + no-twin construction (seed 1)                  0.012           0.124         0.000     0.0
+Wolf Defender + matched pairs (seed 2)                         0.009           0.000         0.000     0.0
+Wolf Defender + no-twin construction (seed 2)                  0.015           0.289         0.002     0.0
+Matched-pair guard, DeBERTa from scratch (seed 0, windowed)    0.000           0.000         0.000     0.0
+
+training runs (best checkpoint by the validation score):
+              model  best_step  optimizer_steps  val_score  auroc_structural  auroc_agent  fpr05_val_hosts  minutes
+       wolf-twin-s0        742             2970     1.0000            1.0000       1.0000           0.0000  14.7284
+     wolf-notwin-s0        281             2250     0.9929            0.9980       0.9922           0.0022  12.2445
+wolf-sizematched-s0        844             2250     0.9987            0.9998       0.9976           0.0000  12.4516
+       wolf-twin-s1       2228             2970     1.0000            1.0000       1.0000           0.0000  14.8663
+     wolf-notwin-s1        844             2250     0.9931            0.9984       0.9878           0.0000  12.3044
+       wolf-twin-s2       1114             2970     0.9999            0.9998       1.0000           0.0000  14.6723
+     wolf-notwin-s2        562             2250     0.9962            0.9992       0.9931           0.0000  12.3680
