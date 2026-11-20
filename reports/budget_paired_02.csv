@@ -1,0 +1,109 @@
+guard,guard_name,against,against_name,budget,diff,lo,hi
+deepset,deepset DeBERTa,wolf-defender,Wolf Defender,1,0.32857142857142857,0.2619047619047619,0.390595238095238
+deepset,deepset DeBERTa,wolf-defender,Wolf Defender,4,0.32857142857142857,0.2571428571428571,0.3952380952380952
+deepset,deepset DeBERTa,wolf-defender,Wolf Defender,7,0.30952380952380953,0.24750000000000003,0.3761904761904762
+deepset,deepset DeBERTa,wolf-defender,Wolf Defender,13,0.3,0.23809523809523808,0.36666666666666664
+fmops,fmops DistilBERT,wolf-defender,Wolf Defender,1,0.3380952380952381,0.2714285714285714,0.4
+fmops,fmops DistilBERT,wolf-defender,Wolf Defender,4,0.32857142857142857,0.2571428571428571,0.3952380952380952
+fmops,fmops DistilBERT,wolf-defender,Wolf Defender,7,0.30952380952380953,0.24750000000000003,0.3761904761904762
+fmops,fmops DistilBERT,wolf-defender,Wolf Defender,13,0.3047619047619048,0.24273809523809525,0.37142857142857144
+horizon-base,Horizon-Labs (Oct 2026 weights),wolf-defender,Wolf Defender,1,0.22380952380952382,0.16666666666666666,0.28095238095238095
+horizon-base,Horizon-Labs (Oct 2026 weights),wolf-defender,Wolf Defender,4,0.21428571428571427,0.1619047619047619,0.2714285714285714
+horizon-base,Horizon-Labs (Oct 2026 weights),wolf-defender,Wolf Defender,7,0.20476190476190476,0.1523809523809524,0.25726190476190464
+horizon-base,Horizon-Labs (Oct 2026 weights),wolf-defender,Wolf Defender,13,0.19523809523809524,0.14750000000000002,0.24761904761904763
+injecguard,InjecGuard,wolf-defender,Wolf Defender,1,-0.014285714285714285,-0.04285714285714286,0.014285714285714285
+injecguard,InjecGuard,wolf-defender,Wolf Defender,4,-0.023809523809523808,-0.05714285714285714,0.004880952380952273
+injecguard,InjecGuard,wolf-defender,Wolf Defender,7,-0.02857142857142857,-0.06666666666666667,0.004761904761904762
+injecguard,InjecGuard,wolf-defender,Wolf Defender,13,-0.023809523809523808,-0.06666666666666667,0.01904761904761905
+jasperls,JasperLS,wolf-defender,Wolf Defender,1,0.32857142857142857,0.2619047619047619,0.390595238095238
+jasperls,JasperLS,wolf-defender,Wolf Defender,4,0.32857142857142857,0.2571428571428571,0.3952380952380952
+jasperls,JasperLS,wolf-defender,Wolf Defender,7,0.30952380952380953,0.24750000000000003,0.3761904761904762
+jasperls,JasperLS,wolf-defender,Wolf Defender,13,0.3,0.23809523809523808,0.36666666666666664
+piguard,PIGuard,wolf-defender,Wolf Defender,1,-0.014285714285714285,-0.04285714285714286,0.014285714285714285
+piguard,PIGuard,wolf-defender,Wolf Defender,4,-0.023809523809523808,-0.05714285714285714,0.004880952380952273
+piguard,PIGuard,wolf-defender,Wolf Defender,7,-0.02857142857142857,-0.06666666666666667,0.004761904761904762
+piguard,PIGuard,wolf-defender,Wolf Defender,13,-0.023809523809523808,-0.06666666666666667,0.01904761904761905
+prismor-1.5b,Prismor-1.5B,wolf-defender,Wolf Defender,1,0.3142857142857143,0.25226190476190474,0.3761904761904762
+prismor-1.5b,Prismor-1.5B,wolf-defender,Wolf Defender,4,0.3047619047619048,0.23809523809523808,0.37142857142857144
+prismor-1.5b,Prismor-1.5B,wolf-defender,Wolf Defender,7,0.2857142857142857,0.22380952380952382,0.3523809523809524
+prismor-1.5b,Prismor-1.5B,wolf-defender,Wolf Defender,13,0.2761904761904762,0.21428571428571427,0.34285714285714286
+promptguard2-22m,Prompt-Guard-2 22M,wolf-defender,Wolf Defender,1,0.19047619047619047,0.12857142857142856,0.2523809523809524
+promptguard2-22m,Prompt-Guard-2 22M,wolf-defender,Wolf Defender,4,0.20952380952380953,0.14761904761904762,0.2714285714285714
+promptguard2-22m,Prompt-Guard-2 22M,wolf-defender,Wolf Defender,7,0.20476190476190476,0.14285714285714285,0.26666666666666666
+promptguard2-22m,Prompt-Guard-2 22M,wolf-defender,Wolf Defender,13,0.21904761904761905,0.1619047619047619,0.2857142857142857
+promptguard2-86m,Prompt-Guard-2 86M,wolf-defender,Wolf Defender,1,0.3142857142857143,0.24285714285714285,0.38095238095238093
+promptguard2-86m,Prompt-Guard-2 86M,wolf-defender,Wolf Defender,4,0.30952380952380953,0.23809523809523808,0.3761904761904762
+promptguard2-86m,Prompt-Guard-2 86M,wolf-defender,Wolf Defender,7,0.2904761904761905,0.22380952380952382,0.3524999999999999
+promptguard2-86m,Prompt-Guard-2 86M,wolf-defender,Wolf Defender,13,0.2904761904761905,0.22380952380952382,0.3524999999999999
+protectai-v1,ProtectAI v1,wolf-defender,Wolf Defender,1,0.3333333333333333,0.2619047619047619,0.3952380952380952
+protectai-v1,ProtectAI v1,wolf-defender,Wolf Defender,4,0.3142857142857143,0.24761904761904763,0.38095238095238093
+protectai-v1,ProtectAI v1,wolf-defender,Wolf Defender,7,0.29523809523809524,0.23333333333333334,0.3619047619047619
+protectai-v1,ProtectAI v1,wolf-defender,Wolf Defender,13,0.2857142857142857,0.22380952380952382,0.3524999999999999
+protectai-v2,ProtectAI v2,wolf-defender,Wolf Defender,1,0.3380952380952381,0.2714285714285714,0.4
+protectai-v2,ProtectAI v2,wolf-defender,Wolf Defender,4,0.32857142857142857,0.2571428571428571,0.3952380952380952
+protectai-v2,ProtectAI v2,wolf-defender,Wolf Defender,7,0.30952380952380953,0.24750000000000003,0.3761904761904762
+protectai-v2,ProtectAI v2,wolf-defender,Wolf Defender,13,0.3047619047619048,0.24273809523809525,0.37142857142857144
+sheltron,Sheltron 68M,wolf-defender,Wolf Defender,1,-0.009523809523809525,-0.0380952380952381,0.01904761904761905
+sheltron,Sheltron 68M,wolf-defender,Wolf Defender,4,0.009523809523809525,-0.023809523809523808,0.04285714285714286
+sheltron,Sheltron 68M,wolf-defender,Wolf Defender,7,0.023809523809523808,-0.014285714285714285,0.05714285714285714
+sheltron,Sheltron 68M,wolf-defender,Wolf Defender,13,0.05238095238095238,0.014285714285714285,0.08583333333333322
+testsavant-large,TestSavant L,wolf-defender,Wolf Defender,1,0.2714285714285714,0.20952380952380953,0.3333333333333333
+testsavant-large,TestSavant L,wolf-defender,Wolf Defender,4,0.2619047619047619,0.19523809523809524,0.32857142857142857
+testsavant-large,TestSavant L,wolf-defender,Wolf Defender,7,0.2523809523809524,0.19047619047619047,0.319047619047619
+testsavant-large,TestSavant L,wolf-defender,Wolf Defender,13,0.24285714285714285,0.18571428571428572,0.30952380952380953
+wani-aug:win,"Paraphrase-augmented, windowed",wolf-defender,Wolf Defender,1,-0.014285714285714285,-0.04285714285714286,0.009523809523809525
+wani-aug:win,"Paraphrase-augmented, windowed",wolf-defender,Wolf Defender,4,0.004761904761904762,-0.02857142857142857,0.04285714285714286
+wani-aug:win,"Paraphrase-augmented, windowed",wolf-defender,Wolf Defender,7,0.014285714285714285,-0.02857142857142857,0.05238095238095238
+wani-aug:win,"Paraphrase-augmented, windowed",wolf-defender,Wolf Defender,13,0.023809523809523808,-0.01904761904761905,0.06190476190476191
+wani-conventional:win,"Conventional fine-tune, windowed",wolf-defender,Wolf Defender,1,0.3380952380952381,0.2714285714285714,0.4
+wani-conventional:win,"Conventional fine-tune, windowed",wolf-defender,Wolf Defender,4,0.3238095238095238,0.2571428571428571,0.38583333333333325
+wani-conventional:win,"Conventional fine-tune, windowed",wolf-defender,Wolf Defender,7,0.3047619047619048,0.24285714285714285,0.37142857142857144
+wani-conventional:win,"Conventional fine-tune, windowed",wolf-defender,Wolf Defender,13,0.29523809523809524,0.23333333333333334,0.3619047619047619
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",wolf-defender,Wolf Defender,1,-0.004761904761904762,-0.03333333333333333,0.023809523809523808
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",wolf-defender,Wolf Defender,4,0.014285714285714285,-0.01904761904761905,0.047619047619047616
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",wolf-defender,Wolf Defender,7,0.02857142857142857,-0.009523809523809525,0.06666666666666667
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",wolf-defender,Wolf Defender,13,0.047619047619047616,0.009523809523809525,0.08583333333333322
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",wolf-defender,Wolf Defender,1,-0.004761904761904762,-0.03333333333333333,0.01916666666666656
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",wolf-defender,Wolf Defender,4,0.014285714285714285,-0.01904761904761905,0.047619047619047616
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",wolf-defender,Wolf Defender,7,0.02857142857142857,-0.009523809523809525,0.06666666666666667
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",wolf-defender,Wolf Defender,13,0.05238095238095238,0.014285714285714285,0.09047619047619047
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",wolf-defender,Wolf Defender,1,-0.009523809523809525,-0.0380952380952381,0.014404761904761795
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",wolf-defender,Wolf Defender,4,-0.004761904761904762,-0.04285714285714286,0.03333333333333333
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",wolf-defender,Wolf Defender,7,0.009523809523809525,-0.02857142857142857,0.047619047619047616
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",wolf-defender,Wolf Defender,13,0.02857142857142857,-0.014285714285714285,0.07142857142857142
+wani-notwin:win,"No-twin ablation, windowed",wolf-defender,Wolf Defender,1,-0.023809523809523808,-0.047619047619047616,0.0
+wani-notwin:win,"No-twin ablation, windowed",wolf-defender,Wolf Defender,4,-0.0380952380952381,-0.07142857142857142,-0.009523809523809525
+wani-notwin:win,"No-twin ablation, windowed",wolf-defender,Wolf Defender,7,-0.03333333333333333,-0.06666666666666667,-0.004761904761904762
+wani-notwin:win,"No-twin ablation, windowed",wolf-defender,Wolf Defender,13,-0.004761904761904762,-0.03345238095238094,0.023809523809523808
+wani-sizematched:win,"Size-matched control, windowed",wolf-defender,Wolf Defender,1,0.01904761904761905,-0.014285714285714285,0.05714285714285714
+wani-sizematched:win,"Size-matched control, windowed",wolf-defender,Wolf Defender,4,0.0380952380952381,0.0,0.08095238095238096
+wani-sizematched:win,"Size-matched control, windowed",wolf-defender,Wolf Defender,7,0.03333333333333333,-0.004761904761904762,0.0761904761904762
+wani-sizematched:win,"Size-matched control, windowed",wolf-defender,Wolf Defender,13,0.06190476190476191,0.018928571428571437,0.10476190476190476
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender,1,-0.01904761904761905,-0.0380952380952381,-0.004761904761904762
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender,4,-0.03333333333333333,-0.05714285714285714,-0.014285714285714285
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender,7,-0.0380952380952381,-0.06666666666666667,-0.014285714285714285
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),wolf-defender,Wolf Defender,13,-0.05714285714285714,-0.09047619047619047,-0.02845238095238106
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender,1,0.0,0.0,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender,4,-0.009523809523809525,-0.023809523809523808,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender,7,-0.014285714285714285,-0.03333333333333333,0.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),wolf-defender,Wolf Defender,13,-0.014285714285714285,-0.0380952380952381,0.004761904761904762
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender,1,0.0,0.0,0.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender,4,-0.004761904761904762,-0.014285714285714285,0.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender,7,-0.004761904761904762,-0.023809523809523808,0.009523809523809525
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),wolf-defender,Wolf Defender,13,-0.01904761904761905,-0.04285714285714286,0.004761904761904762
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender,1,0.0,0.0,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender,4,-0.009523809523809525,-0.023809523809523808,0.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender,7,-0.009523809523809525,-0.02857142857142857,0.009523809523809525
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),wolf-defender,Wolf Defender,13,-0.01904761904761905,-0.04285714285714286,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender,1,0.0,0.0,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender,4,-0.009523809523809525,-0.023809523809523808,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender,7,-0.014285714285714285,-0.03333333333333333,0.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),wolf-defender,Wolf Defender,13,-0.01904761904761905,-0.04285714285714286,-0.004761904761904762
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender,1,0.0,0.0,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender,4,-0.004761904761904762,-0.014285714285714285,0.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender,7,-0.004761904761904762,-0.023809523809523808,0.009523809523809525
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),wolf-defender,Wolf Defender,13,-0.009523809523809525,-0.02857142857142857,0.009523809523809525
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender,1,0.0,0.0,0.0
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender,4,0.009523809523809525,-0.014285714285714285,0.03333333333333333
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender,7,0.01904761904761905,-0.004761904761904762,0.047619047619047616
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),wolf-defender,Wolf Defender,13,0.01904761904761905,-0.009523809523809525,0.047619047619047616

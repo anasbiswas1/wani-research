@@ -1,0 +1,197 @@
+guard,guard_name,category,n,miss_1,miss_13,ceiling_13
+deepset,deepset DeBERTa,Base Encoding,30,0.4,0.6,0.6
+deepset,deepset DeBERTa,Emoji Substitution,30,0.9666666666666667,1.0,1.0
+deepset,deepset DeBERTa,Language Translation,30,0.26666666666666666,0.5,0.5
+deepset,deepset DeBERTa,Misinformation & Propaganda,30,0.3,0.3,0.3
+deepset,deepset DeBERTa,Reverse Text,30,0.23333333333333334,0.3333333333333333,0.36666666666666664
+deepset,deepset DeBERTa,Scams & Fraud,30,0.13333333333333333,0.3,0.3
+deepset,deepset DeBERTa,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+fmops,fmops DistilBERT,Base Encoding,30,0.4,0.6,0.6
+fmops,fmops DistilBERT,Emoji Substitution,30,1.0,1.0,1.0
+fmops,fmops DistilBERT,Language Translation,30,0.26666666666666666,0.5,0.5
+fmops,fmops DistilBERT,Misinformation & Propaganda,30,0.3,0.3,0.3
+fmops,fmops DistilBERT,Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+fmops,fmops DistilBERT,Scams & Fraud,30,0.16666666666666666,0.3,0.3
+fmops,fmops DistilBERT,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+horizon-base,Horizon-Labs (Oct 2026 weights),Base Encoding,30,0.4,0.5,0.6
+horizon-base,Horizon-Labs (Oct 2026 weights),Emoji Substitution,30,0.8666666666666667,0.9333333333333333,1.0
+horizon-base,Horizon-Labs (Oct 2026 weights),Language Translation,30,0.23333333333333334,0.5,0.5
+horizon-base,Horizon-Labs (Oct 2026 weights),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+horizon-base,Horizon-Labs (Oct 2026 weights),Reverse Text,30,0.2,0.3333333333333333,0.36666666666666664
+horizon-base,Horizon-Labs (Oct 2026 weights),Scams & Fraud,30,0.0,0.13333333333333333,0.3
+horizon-base,Horizon-Labs (Oct 2026 weights),Substitution Ciphers,30,0.1,0.1,0.23333333333333334
+injecguard,InjecGuard,Base Encoding,30,0.0,0.03333333333333333,0.6
+injecguard,InjecGuard,Emoji Substitution,30,0.06666666666666667,0.3333333333333333,1.0
+injecguard,InjecGuard,Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+injecguard,InjecGuard,Misinformation & Propaganda,30,0.03333333333333333,0.03333333333333333,0.3
+injecguard,InjecGuard,Reverse Text,30,0.0,0.06666666666666667,0.36666666666666664
+injecguard,InjecGuard,Scams & Fraud,30,0.0,0.2,0.3
+injecguard,InjecGuard,Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+jasperls,JasperLS,Base Encoding,30,0.4,0.6,0.6
+jasperls,JasperLS,Emoji Substitution,30,0.9666666666666667,1.0,1.0
+jasperls,JasperLS,Language Translation,30,0.26666666666666666,0.5,0.5
+jasperls,JasperLS,Misinformation & Propaganda,30,0.3,0.3,0.3
+jasperls,JasperLS,Reverse Text,30,0.23333333333333334,0.3333333333333333,0.36666666666666664
+jasperls,JasperLS,Scams & Fraud,30,0.13333333333333333,0.3,0.3
+jasperls,JasperLS,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+piguard,PIGuard,Base Encoding,30,0.0,0.03333333333333333,0.6
+piguard,PIGuard,Emoji Substitution,30,0.06666666666666667,0.3333333333333333,1.0
+piguard,PIGuard,Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+piguard,PIGuard,Misinformation & Propaganda,30,0.03333333333333333,0.03333333333333333,0.3
+piguard,PIGuard,Reverse Text,30,0.0,0.06666666666666667,0.36666666666666664
+piguard,PIGuard,Scams & Fraud,30,0.0,0.2,0.3
+piguard,PIGuard,Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+prismor-1.5b,Prismor-1.5B,Base Encoding,30,0.26666666666666666,0.5,0.6
+prismor-1.5b,Prismor-1.5B,Emoji Substitution,30,1.0,1.0,1.0
+prismor-1.5b,Prismor-1.5B,Language Translation,30,0.26666666666666666,0.5,0.5
+prismor-1.5b,Prismor-1.5B,Misinformation & Propaganda,30,0.3,0.3,0.3
+prismor-1.5b,Prismor-1.5B,Reverse Text,30,0.2,0.3,0.36666666666666664
+prismor-1.5b,Prismor-1.5B,Scams & Fraud,30,0.16666666666666666,0.26666666666666666,0.3
+prismor-1.5b,Prismor-1.5B,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+promptguard2-22m,Prompt-Guard-2 22M,Base Encoding,30,0.3333333333333333,0.5666666666666667,0.6
+promptguard2-22m,Prompt-Guard-2 22M,Emoji Substitution,30,0.4666666666666667,0.7666666666666667,1.0
+promptguard2-22m,Prompt-Guard-2 22M,Language Translation,30,0.26666666666666666,0.5,0.5
+promptguard2-22m,Prompt-Guard-2 22M,Misinformation & Propaganda,30,0.06666666666666667,0.1,0.3
+promptguard2-22m,Prompt-Guard-2 22M,Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+promptguard2-22m,Prompt-Guard-2 22M,Scams & Fraud,30,0.03333333333333333,0.23333333333333334,0.3
+promptguard2-22m,Prompt-Guard-2 22M,Substitution Ciphers,30,0.16666666666666666,0.16666666666666666,0.23333333333333334
+promptguard2-86m,Prompt-Guard-2 86M,Base Encoding,30,0.4,0.6,0.6
+promptguard2-86m,Prompt-Guard-2 86M,Emoji Substitution,30,0.9666666666666667,1.0,1.0
+promptguard2-86m,Prompt-Guard-2 86M,Language Translation,30,0.23333333333333334,0.4666666666666667,0.5
+promptguard2-86m,Prompt-Guard-2 86M,Misinformation & Propaganda,30,0.23333333333333334,0.23333333333333334,0.3
+promptguard2-86m,Prompt-Guard-2 86M,Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+promptguard2-86m,Prompt-Guard-2 86M,Scams & Fraud,30,0.13333333333333333,0.3,0.3
+promptguard2-86m,Prompt-Guard-2 86M,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+protectai-v1,ProtectAI v1,Base Encoding,30,0.36666666666666664,0.4666666666666667,0.6
+protectai-v1,ProtectAI v1,Emoji Substitution,30,1.0,1.0,1.0
+protectai-v1,ProtectAI v1,Language Translation,30,0.26666666666666666,0.5,0.5
+protectai-v1,ProtectAI v1,Misinformation & Propaganda,30,0.3,0.3,0.3
+protectai-v1,ProtectAI v1,Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+protectai-v1,ProtectAI v1,Scams & Fraud,30,0.16666666666666666,0.3,0.3
+protectai-v1,ProtectAI v1,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+protectai-v2,ProtectAI v2,Base Encoding,30,0.4,0.6,0.6
+protectai-v2,ProtectAI v2,Emoji Substitution,30,1.0,1.0,1.0
+protectai-v2,ProtectAI v2,Language Translation,30,0.26666666666666666,0.5,0.5
+protectai-v2,ProtectAI v2,Misinformation & Propaganda,30,0.3,0.3,0.3
+protectai-v2,ProtectAI v2,Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+protectai-v2,ProtectAI v2,Scams & Fraud,30,0.16666666666666666,0.3,0.3
+protectai-v2,ProtectAI v2,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+sheltron,Sheltron 68M,Base Encoding,30,0.0,0.2,0.6
+sheltron,Sheltron 68M,Emoji Substitution,30,0.06666666666666667,0.6,1.0
+sheltron,Sheltron 68M,Language Translation,30,0.06666666666666667,0.3333333333333333,0.5
+sheltron,Sheltron 68M,Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+sheltron,Sheltron 68M,Reverse Text,30,0.03333333333333333,0.16666666666666666,0.36666666666666664
+sheltron,Sheltron 68M,Scams & Fraud,30,0.0,0.2,0.3
+sheltron,Sheltron 68M,Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+testsavant-large,TestSavant L,Base Encoding,30,0.36666666666666664,0.5333333333333333,0.6
+testsavant-large,TestSavant L,Emoji Substitution,30,0.8666666666666667,0.9333333333333333,1.0
+testsavant-large,TestSavant L,Language Translation,30,0.26666666666666666,0.5,0.5
+testsavant-large,TestSavant L,Misinformation & Propaganda,30,0.1,0.1,0.3
+testsavant-large,TestSavant L,Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+testsavant-large,TestSavant L,Scams & Fraud,30,0.06666666666666667,0.2,0.3
+testsavant-large,TestSavant L,Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+wani-aug:win,"Paraphrase-augmented, windowed",Base Encoding,30,0.0,0.2,0.6
+wani-aug:win,"Paraphrase-augmented, windowed",Emoji Substitution,30,0.1,0.5333333333333333,1.0
+wani-aug:win,"Paraphrase-augmented, windowed",Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wani-aug:win,"Paraphrase-augmented, windowed",Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wani-aug:win,"Paraphrase-augmented, windowed",Reverse Text,30,0.0,0.06666666666666667,0.36666666666666664
+wani-aug:win,"Paraphrase-augmented, windowed",Scams & Fraud,30,0.0,0.16666666666666666,0.3
+wani-aug:win,"Paraphrase-augmented, windowed",Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wani-conventional:win,"Conventional fine-tune, windowed",Base Encoding,30,0.4,0.5333333333333333,0.6
+wani-conventional:win,"Conventional fine-tune, windowed",Emoji Substitution,30,1.0,1.0,1.0
+wani-conventional:win,"Conventional fine-tune, windowed",Language Translation,30,0.26666666666666666,0.5,0.5
+wani-conventional:win,"Conventional fine-tune, windowed",Misinformation & Propaganda,30,0.3,0.3,0.3
+wani-conventional:win,"Conventional fine-tune, windowed",Reverse Text,30,0.23333333333333334,0.36666666666666664,0.36666666666666664
+wani-conventional:win,"Conventional fine-tune, windowed",Scams & Fraud,30,0.16666666666666666,0.3,0.3
+wani-conventional:win,"Conventional fine-tune, windowed",Substitution Ciphers,30,0.23333333333333334,0.23333333333333334,0.23333333333333334
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Base Encoding,30,0.0,0.2,0.6
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Emoji Substitution,30,0.1,0.5666666666666667,1.0
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Language Translation,30,0.1,0.4,0.5
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Reverse Text,30,0.0,0.1,0.36666666666666664
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Scams & Fraud,30,0.0,0.2,0.3
+wani-full-s0:win,"Matched-pair guard (seed 0), windowed",Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Base Encoding,30,0.03333333333333333,0.23333333333333334,0.6
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Emoji Substitution,30,0.06666666666666667,0.5666666666666667,1.0
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Language Translation,30,0.1,0.4,0.5
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Reverse Text,30,0.0,0.1,0.36666666666666664
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Scams & Fraud,30,0.0,0.2,0.3
+wani-full-s1:win,"Matched-pair guard (seed 1), windowed",Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Base Encoding,30,0.03333333333333333,0.23333333333333334,0.6
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Emoji Substitution,30,0.03333333333333333,0.43333333333333335,1.0
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Language Translation,30,0.06666666666666667,0.36666666666666664,0.5
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Misinformation & Propaganda,30,0.03333333333333333,0.06666666666666667,0.3
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Reverse Text,30,0.0,0.06666666666666667,0.36666666666666664
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Scams & Fraud,30,0.0,0.2,0.3
+wani-full-s2:win,"Matched-pair guard (seed 2), windowed",Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wani-notwin:win,"No-twin ablation, windowed",Base Encoding,30,0.0,0.0,0.6
+wani-notwin:win,"No-twin ablation, windowed",Emoji Substitution,30,0.0,0.5,1.0
+wani-notwin:win,"No-twin ablation, windowed",Language Translation,30,0.06666666666666667,0.36666666666666664,0.5
+wani-notwin:win,"No-twin ablation, windowed",Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wani-notwin:win,"No-twin ablation, windowed",Reverse Text,30,0.0,0.06666666666666667,0.36666666666666664
+wani-notwin:win,"No-twin ablation, windowed",Scams & Fraud,30,0.0,0.16666666666666666,0.3
+wani-notwin:win,"No-twin ablation, windowed",Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wani-sizematched:win,"Size-matched control, windowed",Base Encoding,30,0.03333333333333333,0.23333333333333334,0.6
+wani-sizematched:win,"Size-matched control, windowed",Emoji Substitution,30,0.13333333333333333,0.5666666666666667,1.0
+wani-sizematched:win,"Size-matched control, windowed",Language Translation,30,0.16666666666666666,0.43333333333333335,0.5
+wani-sizematched:win,"Size-matched control, windowed",Misinformation & Propaganda,30,0.03333333333333333,0.06666666666666667,0.3
+wani-sizematched:win,"Size-matched control, windowed",Reverse Text,30,0.0,0.1,0.36666666666666664
+wani-sizematched:win,"Size-matched control, windowed",Scams & Fraud,30,0.0,0.2,0.3
+wani-sizematched:win,"Size-matched control, windowed",Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wolf-defender,Wolf Defender,Base Encoding,30,0.0,0.0,0.6
+wolf-defender,Wolf Defender,Emoji Substitution,30,0.13333333333333333,0.5666666666666667,1.0
+wolf-defender,Wolf Defender,Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wolf-defender,Wolf Defender,Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-defender,Wolf Defender,Reverse Text,30,0.03333333333333333,0.1,0.36666666666666664
+wolf-defender,Wolf Defender,Scams & Fraud,30,0.0,0.1,0.3
+wolf-defender,Wolf Defender,Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Base Encoding,30,0.0,0.0,0.6
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Emoji Substitution,30,0.06666666666666667,0.23333333333333334,1.0
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Reverse Text,30,0.0,0.06666666666666667,0.36666666666666664
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Scams & Fraud,30,0.0,0.1,0.3
+wolf-twin-s0,Wolf Defender + matched pairs (seed 0),Substitution Ciphers,30,0.0,0.0,0.23333333333333334
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Base Encoding,30,0.0,0.0,0.6
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Emoji Substitution,30,0.13333333333333333,0.6,1.0
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Language Translation,30,0.03333333333333333,0.3,0.5
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Reverse Text,30,0.03333333333333333,0.06666666666666667,0.36666666666666664
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Scams & Fraud,30,0.0,0.03333333333333333,0.3
+wolf-notwin-s0,Wolf Defender + no-twin construction (seed 0),Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Base Encoding,30,0.0,0.0,0.6
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Emoji Substitution,30,0.13333333333333333,0.4,1.0
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Reverse Text,30,0.03333333333333333,0.13333333333333333,0.36666666666666664
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Scams & Fraud,30,0.0,0.1,0.3
+wolf-sizematched-s0,Wolf Defender + size-matched construction (seed 0),Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Base Encoding,30,0.0,0.0,0.6
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Emoji Substitution,30,0.13333333333333333,0.4666666666666667,1.0
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Reverse Text,30,0.03333333333333333,0.06666666666666667,0.36666666666666664
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Scams & Fraud,30,0.0,0.1,0.3
+wolf-twin-s1,Wolf Defender + matched pairs (seed 1),Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Base Encoding,30,0.0,0.0,0.6
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Emoji Substitution,30,0.13333333333333333,0.5666666666666667,1.0
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Language Translation,30,0.03333333333333333,0.3,0.5
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Reverse Text,30,0.03333333333333333,0.06666666666666667,0.36666666666666664
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Scams & Fraud,30,0.0,0.03333333333333333,0.3
+wolf-notwin-s1,Wolf Defender + no-twin construction (seed 1),Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Base Encoding,30,0.0,0.0,0.6
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Emoji Substitution,30,0.13333333333333333,0.5,1.0
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Reverse Text,30,0.03333333333333333,0.1,0.36666666666666664
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Scams & Fraud,30,0.0,0.1,0.3
+wolf-twin-s2,Wolf Defender + matched pairs (seed 2),Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Base Encoding,30,0.0,0.2,0.6
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Emoji Substitution,30,0.13333333333333333,0.6,1.0
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Language Translation,30,0.03333333333333333,0.3333333333333333,0.5
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Misinformation & Propaganda,30,0.0,0.03333333333333333,0.3
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Reverse Text,30,0.03333333333333333,0.06666666666666667,0.36666666666666664
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Scams & Fraud,30,0.0,0.03333333333333333,0.3
+wolf-notwin-s2,Wolf Defender + no-twin construction (seed 2),Substitution Ciphers,30,0.03333333333333333,0.03333333333333333,0.23333333333333334
