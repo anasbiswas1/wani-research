@@ -1,0 +1,43 @@
+model,model_name,against,against_name,view,measure,diff,lo,hi
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-notwin-s0,Matched pairs without twins (seed 0),as released,"false alarms at 0.5, hard-negative steps",-0.1638316920322292,-0.1835151814947357,-0.1440369211514393
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-notwin-s0,Matched pairs without twins (seed 0),as released,"false alarms at 0.5, benign steps",-0.0034746351633078527,-0.005778529510886323,-0.0014907852660173064
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-notwin-s0,Matched pairs without twins (seed 0),as released,caught at 1 in 100,0.35548841893252775,0.21767634933182994,0.4518215580809101
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-notwin-s0,Matched pairs without twins (seed 0),masked,"false alarms at 0.5, hard-negative steps",-0.1674127126230976,-0.1878854870435303,-0.14723243677238057
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-notwin-s0,Matched pairs without twins (seed 0),masked,"false alarms at 0.5, benign steps",-0.010423905489923557,-0.01688599441670561,-0.004834215633921419
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-notwin-s0,Matched pairs without twins (seed 0),masked,caught at 1 in 100,0.20745216515609272,0.07805865657521288,0.27549233097880926
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-notwin-s1,Matched pairs without twins (seed 1),as released,"false alarms at 0.5, hard-negative steps",-0.12175470008952549,-0.14300509426087749,-0.100085601404741
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-notwin-s1,Matched pairs without twins (seed 1),as released,"false alarms at 0.5, benign steps",-0.002779708130646282,-0.005193071238662968,-0.0008321288062412851
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-notwin-s1,Matched pairs without twins (seed 1),as released,caught at 1 in 100,0.0,-0.07077401379904098,0.17200856553147573
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-notwin-s1,Matched pairs without twins (seed 1),masked,"false alarms at 0.5, hard-negative steps",-0.1342882721575649,-0.15625064941812136,-0.11257773573005361
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-notwin-s1,Matched pairs without twins (seed 1),masked,"false alarms at 0.5, benign steps",-0.003822098679638638,-0.007131380672809316,-0.001386950533271477
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-notwin-s1,Matched pairs without twins (seed 1),masked,caught at 1 in 100,-0.15508559919436055,-0.21329310360494408,-0.02927346169611959
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-notwin-s2,Matched pairs without twins (seed 2),as released,"false alarms at 0.5, hard-negative steps",-0.1736794986571173,-0.19676354589761483,-0.14920115912421728
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-notwin-s2,Matched pairs without twins (seed 2),as released,"false alarms at 0.5, benign steps",-0.011466296038915913,-0.018265536251252924,-0.006246629398599199
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-notwin-s2,Matched pairs without twins (seed 2),as released,caught at 1 in 100,0.14199395770392748,0.051358736834128976,0.23740159149347098
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-notwin-s2,Matched pairs without twins (seed 2),masked,"false alarms at 0.5, hard-negative steps",-0.19068934646374217,-0.21221722159222162,-0.1676863914161343
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-notwin-s2,Matched pairs without twins (seed 2),masked,"false alarms at 0.5, benign steps",-0.026059763724808893,-0.043550042781836565,-0.012616046864179975
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-notwin-s2,Matched pairs without twins (seed 2),masked,caught at 1 in 100,-0.019133937562940573,-0.07542705969060892,0.05758649387110518
+wolf-sizematched-s0,"Matched pairs, size-matched (seed 0)",wolf-notwin-s0,Matched pairs without twins (seed 0),as released,"false alarms at 0.5, hard-negative steps",-0.1700984780662489,-0.189166289565818,-0.14898247965637662
+wolf-sizematched-s0,"Matched pairs, size-matched (seed 0)",wolf-notwin-s0,Matched pairs without twins (seed 0),as released,"false alarms at 0.5, benign steps",-0.0034746351633078527,-0.005778529510886323,-0.0014907852660173064
+wolf-sizematched-s0,"Matched pairs, size-matched (seed 0)",wolf-notwin-s0,Matched pairs without twins (seed 0),as released,caught at 1 in 100,0.09768378650553877,0.030523115966015663,0.19788531339725876
+wolf-sizematched-s0,"Matched pairs, size-matched (seed 0)",wolf-notwin-s0,Matched pairs without twins (seed 0),masked,"false alarms at 0.5, hard-negative steps",-0.1781557743957028,-0.19897069633787756,-0.15783782187573825
+wolf-sizematched-s0,"Matched pairs, size-matched (seed 0)",wolf-notwin-s0,Matched pairs without twins (seed 0),masked,"false alarms at 0.5, benign steps",-0.010423905489923557,-0.01688599441670561,-0.004834215633921419
+wolf-sizematched-s0,"Matched pairs, size-matched (seed 0)",wolf-notwin-s0,Matched pairs without twins (seed 0),masked,caught at 1 in 100,0.042296072507552906,-0.08174352922765235,0.10408802680644479
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-defender,Wolf Defender (released),as released,"false alarms at 0.5, hard-negative steps",-0.06356311548791405,-0.07802035152636448,-0.04942495393058013
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-defender,Wolf Defender (released),as released,"false alarms at 0.5, benign steps",0.0,0.0,0.0
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-defender,Wolf Defender (released),as released,caught at 1 in 100,-0.0825780463242698,-0.18872513980272598,-0.008036046373600279
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-defender,Wolf Defender (released),masked,"false alarms at 0.5, hard-negative steps",-0.06624888093106535,-0.08621518567639258,-0.04660987331574707
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-defender,Wolf Defender (released),masked,"false alarms at 0.5, benign steps",-0.005211952744961779,-0.010919350870284214,-0.0009660289855072465
+wolf-twin-s0,Matched pairs with twins (seed 0),wolf-defender,Wolf Defender (released),masked,caught at 1 in 100,-0.11278952668680764,-0.17074007778092568,-0.06449176747311824
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-defender,Wolf Defender (released),as released,"false alarms at 0.5, hard-negative steps",-0.05371530886302595,-0.07172845870652639,-0.03700510986564516
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-defender,Wolf Defender (released),as released,"false alarms at 0.5, benign steps",0.0,0.0,0.0
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-defender,Wolf Defender (released),as released,caught at 1 in 100,-0.32729103726082576,-0.42017878006740345,-0.18048554265647923
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-defender,Wolf Defender (released),masked,"false alarms at 0.5, hard-negative steps",-0.05461056401074306,-0.07433777948783721,-0.034870661256124307
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-defender,Wolf Defender (released),masked,"false alarms at 0.5, benign steps",-0.005211952744961779,-0.010919350870284214,-0.0009660289855072465
+wolf-twin-s1,Matched pairs with twins (seed 1),wolf-defender,Wolf Defender (released),masked,caught at 1 in 100,-0.34340382678751263,-0.42069456569183755,-0.22917335670096498
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-defender,Wolf Defender (released),as released,"false alarms at 0.5, hard-negative steps",-0.04565801253357206,-0.06094663317434756,-0.030717695203496403
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-defender,Wolf Defender (released),as released,"false alarms at 0.5, benign steps",0.0,0.0,0.0
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-defender,Wolf Defender (released),as released,caught at 1 in 100,-0.18630412890231618,-0.25899758859299643,-0.058867771301263715
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-defender,Wolf Defender (released),masked,"false alarms at 0.5, hard-negative steps",-0.046553267681289166,-0.06667669819432503,-0.02833913212085299
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-defender,Wolf Defender (released),masked,"false alarms at 0.5, benign steps",-0.004864489228630993,-0.010636309836511745,-0.0006547160170324274
+wolf-twin-s2,Matched pairs with twins (seed 2),wolf-defender,Wolf Defender (released),masked,caught at 1 in 100,-0.18932527693857004,-0.23780629854146282,-0.10710138710138714

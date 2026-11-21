@@ -1,0 +1,38 @@
+Notebook 03d: twins and false alarms on AgentDrift (scoring only). Decision: TWINS LOWER FALSE ALARMS ON THE HELD-OUT AGENT TEST
+
+AgentDrift task-disjoint test split, notebook 03c's rows; every model reads the tool output alone; paired cluster bootstraps by task.
+
+T2, false alarms at 0.5 on hard-negative steps, twin minus no-twin at the same seed:
+  seed 0: 0.043 vs 0.207, diff -0.164 [-0.184, -0.144] holds
+  seed 1: 0.053 vs 0.175, diff -0.122 [-0.143, -0.100] holds
+  seed 2: 0.061 vs 0.235, diff -0.174 [-0.197, -0.149] holds
+size-matched (twins, fewer harmless rows) minus no-twin, seed 0: 0.037 vs 0.207, diff -0.170 [-0.189, -0.149]
+
+attacks caught at 1 false alarm in 100, twin minus no-twin:
+  seed 0: 0.506 vs 0.150, diff +0.355 [+0.218, +0.452]
+  seed 1: 0.261 vs 0.261, diff +0.000 [-0.071, +0.172]
+  seed 2: 0.402 vs 0.260, diff +0.142 [+0.051, +0.237]
+
+masked view, T2 measure:
+  seed 0: diff -0.167 [-0.188, -0.147]
+  seed 1: diff -0.134 [-0.156, -0.113]
+  seed 2: diff -0.191 [-0.212, -0.168]
+
+all models (as released and masked):
+                          model_name        view  fpr_hard_negative_0_5  fpr_benign_0_5  caught_1pct  caught_0_5  auroc
+   Matched pairs with twins (seed 0) as released                  0.043           0.000        0.506       0.553  0.869
+   Matched pairs with twins (seed 0)      masked                  0.031           0.000        0.580       0.560  0.870
+   Matched pairs with twins (seed 1) as released                  0.053           0.000        0.261       0.428  0.856
+   Matched pairs with twins (seed 1)      masked                  0.043           0.000        0.349       0.428  0.854
+   Matched pairs with twins (seed 2) as released                  0.061           0.000        0.402       0.582  0.865
+   Matched pairs with twins (seed 2)      masked                  0.051           0.000        0.504       0.586  0.867
+Matched pairs without twins (seed 0) as released                  0.207           0.003        0.150       0.814  0.895
+Matched pairs without twins (seed 0)      masked                  0.199           0.010        0.373       0.814  0.903
+Matched pairs without twins (seed 1) as released                  0.175           0.003        0.261       0.780  0.889
+Matched pairs without twins (seed 1)      masked                  0.177           0.004        0.505       0.781  0.896
+Matched pairs without twins (seed 2) as released                  0.235           0.011        0.260       0.821  0.894
+Matched pairs without twins (seed 2)      masked                  0.242           0.026        0.523       0.822  0.901
+Matched pairs, size-matched (seed 0) as released                  0.037           0.000        0.248       0.258  0.849
+Matched pairs, size-matched (seed 0)      masked                  0.021           0.000        0.415       0.286  0.850
+            Wolf Defender (released) as released                  0.107           0.000        0.588       0.743  0.902
+            Wolf Defender (released)      masked                  0.098           0.005        0.693       0.741  0.904
