@@ -2,6 +2,8 @@
 environment their transformers version needs, with the same cache record so panel_metrics reads both alike.
 
     python src/local_guards.py NAME MODEL_DIR MAX_LEN SET.jsonl OUT.json
+
+MODEL_DIR is a local directory or REPO@REVISION for a released model at a pinned revision.
 """
 from __future__ import annotations
 import json, os, subprocess, sys, tempfile
@@ -16,13 +18,21 @@ def positive_index(config):
     return int(config.num_labels) - 1
 
 
+def split_ref(model_dir):
+    if "@" in model_dir and not os.path.exists(model_dir):
+        repo, rev = model_dir.rsplit("@", 1)
+        return repo, rev
+    return model_dir, None
+
+
 def score_local(model_dir, max_len, texts):
     """Probability of the injection class, truncated at max_len tokens (the released guard's documented input length)."""
     import torch
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
     dev = device()
-    tok = AutoTokenizer.from_pretrained(model_dir)
-    model = AutoModelForSequenceClassification.from_pretrained(model_dir).to(dev).eval()
+    ref, rev = split_ref(model_dir)
+    tok = AutoTokenizer.from_pretrained(ref, revision=rev)
+    model = AutoModelForSequenceClassification.from_pretrained(ref, revision=rev).to(dev).eval()
     if model.config.pad_token_id is None and tok.pad_token_id is not None:
         model.config.pad_token_id = tok.pad_token_id
     idx = positive_index(model.config)
@@ -34,10 +44,10 @@ def score_local(model_dir, max_len, texts):
         enc.pop("token_type_ids", None)
         with torch.no_grad():
             probs.extend(torch.softmax(model(**enc).logits.float(), -1)[:, idx].cpu().tolist())
-    meta_path = os.path.join(model_dir, "training_meta.json")
+    meta_path = os.path.join(ref, "training_meta.json")
     training = json.load(open(meta_path)) if os.path.exists(meta_path) else {}
     meta = {"positive_index": idx, "id2label": {str(k): str(v) for k, v in dict(model.config.id2label or {}).items()}, "model_dir": model_dir,
-            "max_len": max_len, "base": training.get("base"), "base_revision": training.get("revision"), "best_step": (training.get("best") or {}).get("step")}
+            "max_len": max_len, "revision": rev, "commit_hash": getattr(model.config, "_commit_hash", None), "base": training.get("base"), "base_revision": training.get("revision"), "best_step": (training.get("best") or {}).get("step")}
     return probs, trunc / max(len(texts), 1), meta
 
 

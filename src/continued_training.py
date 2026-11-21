@@ -10,6 +10,9 @@ reads id2label scores it unchanged. The word embeddings are frozen; every other 
 cross-entropy, AdamW, linear warm-up and decay. Selection: the evaluation (evals_per_epoch times per epoch and at the
 end) with the highest val score, where
     val score = mean over packs of AUROC on the pack  -  false-positive rate at 0.5 on the val hosts (form host_only).
+With --select loss the selected evaluation is instead the one with the lowest macro validation loss: the
+cross-entropy averaged within each form, then across forms, so that rare hard forms weigh as much as common easy
+ones (a score near 1 on every pack cannot choose between checkpoints; the loss still can).
 The best model is saved to OUT/best with training_meta.json; every evaluation is in OUT/train_log.json.
 """
 from __future__ import annotations
@@ -85,6 +88,11 @@ def evaluate(model, tok, rows, pos_idx, max_len, device, batch=32):
     out["caught05"] = float((probs[y == 1] >= 0.5).mean()) if (y == 1).any() else float("nan")
     aurocs = [v for k, v in out.items() if k.startswith("auroc_") and not math.isnan(v)]
     out["val_score"] = (sum(aurocs) / len(aurocs) if aurocs else float("nan")) - (0.0 if math.isnan(out["fpr05_hosts"]) else out["fpr05_hosts"])
+    pc = np.clip(probs, 1e-7, 1 - 1e-7); ce = -(y * np.log(pc) + (1 - y) * np.log(1 - pc))
+    forms = np.asarray([r.get("form", "all") for r in rows]); per_form = {}
+    for fm in sorted(set(forms)):
+        per_form[fm] = float(ce[forms == fm].mean()); out[f"loss_{fm}"] = per_form[fm]
+    out["val_loss_macro"] = float(np.mean(list(per_form.values())))
     return out
 
 
@@ -152,7 +160,10 @@ def train(args):
                 if step in eval_at:
                     ev = evaluate(model, tok, val_rows, pos_idx, args.max_len, device)
                     rec = dict(step=step, epoch=epoch + 1, train_loss=run_loss / max(n_loss, 1), **ev); run_loss = 0.0; n_loss = 0
-                    is_best = best is None or (ev["val_score"] == ev["val_score"] and ev["val_score"] > best["val_score"])
+                    if args.select == "loss":
+                        is_best = best is None or ev["val_loss_macro"] < best["val_loss_macro"]
+                    else:
+                        is_best = best is None or (ev["val_score"] == ev["val_score"] and ev["val_score"] > best["val_score"])
                     rec["best"] = bool(is_best); log.append(rec)
                     print("eval " + json.dumps({a: (round(b, 4) if isinstance(b, float) else b) for a, b in rec.items()}), flush=True)
                     if is_best:
@@ -160,7 +171,7 @@ def train(args):
                         model.save_pretrained(os.path.join(args.out, "best"), safe_serialization=True)
                         tok.save_pretrained(os.path.join(args.out, "best"))
                     json.dump(log, open(os.path.join(args.out, "train_log.json"), "w"), indent=1)
-    meta = dict(base=args.base, revision=args.revision, base_commit_hash=getattr(model.config, "_commit_hash", None), seed=args.seed,
+    meta = dict(select=args.select, base=args.base, revision=args.revision, base_commit_hash=getattr(model.config, "_commit_hash", None), seed=args.seed,
                 epochs=args.epochs, lr=args.lr, batch=args.batch, accum=args.accum, max_len=args.max_len, optimizer_steps=total,
                 train_files={p: sha256(p) for p in args.train}, val_file={args.val: sha256(args.val)}, n_train=len(train_rows), n_train_positive=n1,
                 positive_index=pos_idx, id2label={str(k): str(v) for k, v in dict(model.config.id2label).items()}, frozen=frozen,
@@ -168,7 +179,7 @@ def train(args):
                 torch=torch.__version__, transformers=transformers.__version__, best=best, minutes=(time.time() - t_start) / 60)
     json.dump(meta, open(os.path.join(args.out, "best", "training_meta.json"), "w"), indent=1)
     json.dump(log, open(os.path.join(args.out, "train_log.json"), "w"), indent=1)
-    print(f"done: best step {best['step']} val score {best['val_score']:.4f} in {meta['minutes']:.1f} min", flush=True)
+    print(f"done: best step {best['step']} val score {best['val_score']:.4f} macro val loss {best['val_loss_macro']:.4f} ({args.select}) in {meta['minutes']:.1f} min", flush=True)
     return meta
 
 
@@ -201,7 +212,7 @@ def smoke(work):
     with open(va, "w") as f:
         for r in rows[30:]: f.write(json.dumps(r) + "\n")
     ns = argparse.Namespace(base=base, revision=None, train=[tr], val=va, out=os.path.join(work, "run"), seed=0, epochs=1, lr=1e-3,
-                            batch=4, accum=2, max_len=64, evals_per_epoch=2)
+                            batch=4, accum=2, max_len=64, evals_per_epoch=2, select="loss")
     meta = train(ns)
     assert meta["positive_index"] == 0 and meta["best"] is not None
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
@@ -219,6 +230,7 @@ if __name__ == "__main__":
     ap.add_argument("--out"); ap.add_argument("--seed", type=int, default=0); ap.add_argument("--epochs", type=int, default=2)
     ap.add_argument("--lr", type=float, default=1e-5); ap.add_argument("--batch", type=int, default=8); ap.add_argument("--accum", type=int, default=2)
     ap.add_argument("--max_len", type=int, default=1024); ap.add_argument("--evals_per_epoch", type=int, default=4); ap.add_argument("--smoke", default=None)
+    ap.add_argument("--select", choices=["score", "loss"], default="score")
     a = ap.parse_args()
     if a.smoke:
         smoke(a.smoke)
