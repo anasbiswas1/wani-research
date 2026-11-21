@@ -1,0 +1,147 @@
+detector,detector_name,set,read_on,n_benign,fpr_0_5,block_rate_0_5
+wolf-defender,"Wolf Defender (released, content only)",adclean,adclean,339,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",admatched,admatched,585,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",adshift,adshift,975,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",bipia_pairs,bipia_pairs,1200,0.0008333333333333334,0.0008333333333333334
+wolf-defender,"Wolf Defender (released, content only)",tbeval,tbeval,1533,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",ours_bipia,ours_bipia,778,0.0012853470437017994,0.0012853470437017994
+wolf-defender,"Wolf Defender (released, content only)",ours_opi,ours_opi,900,0.04,0.3333333333333333
+wolf-defender,"Wolf Defender (released, content only)",ours_agentdojo,ours_agentdojo,129,0.046511627906976744,0.25
+wolf-defender,"Wolf Defender (released, content only)",ours_notinject,ours_notinject,339,0.029498525073746312,0.029498525073746312
+wolf-defender,"Wolf Defender (released, content only)",ours_recipes,ours_recipes,500,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",agentdrift:benign,agentdrift,2878,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",agentdrift:hard_negative,agentdrift,1117,0.10653536257833482,0.5441176470588235
+wolf-defender:req,"Wolf Defender (released, request shown)",adclean,req_adclean,339,0.02654867256637168,0.08247422680412371
+wolf-defender:req,"Wolf Defender (released, request shown)",admatched,req_admatched,585,0.020512820512820513,0.06060606060606061
+wolf-defender:req,"Wolf Defender (released, request shown)",adshift,req_adshift,975,0.020512820512820513,0.06060606060606061
+wolf-defender:req,"Wolf Defender (released, request shown)",bipia_pairs,req_bipia_pairs,1200,0.020833333333333332,0.020833333333333332
+wolf-defender:req,"Wolf Defender (released, request shown)",tbeval,reqtask_tbeval,1533,0.22570123939986952,0.21333333333333335
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_bipia,req_ours_bipia,778,0.006426735218508998,0.006426735218508998
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_opi,req_ours_opi,900,0.058888888888888886,0.5
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_agentdojo,req_ours_agentdojo,129,0.046511627906976744,0.25
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_notinject,req_ours_notinject,339,0.3421828908554572,0.3421828908554572
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-defender:req,"Wolf Defender (released, request shown)",agentdrift:benign,agentdrift_req,2878,0.011118832522585128,0.04
+wolf-defender:req,"Wolf Defender (released, request shown)",agentdrift:hard_negative,agentdrift_req,1117,0.1718889883616831,0.7941176470588235
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_notinject (as content),req_ours_notinject_content,339,0.1710914454277286,
+wolf-defender:req,"Wolf Defender (released, request shown)",tbeval (simulator brief shown),req_tbeval,1533,0.4116112198303979,
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",adclean,adclean,339,0.008849557522123894,0.030927835051546393
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",admatched,admatched,585,0.010256410256410256,0.030303030303030304
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",adshift,adshift,975,0.010256410256410256,0.030303030303030304
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",bipia_pairs,bipia_pairs,1200,0.0008333333333333334,0.0008333333333333334
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",tbeval,tbeval,1533,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_bipia,ours_bipia,778,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_opi,ours_opi,900,0.005555555555555556,0.3333333333333333
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_agentdojo,ours_agentdojo,129,0.09302325581395349,0.75
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_notinject,ours_notinject,339,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_recipes,ours_recipes,500,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",agentdrift:benign,agentdrift,2878,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",agentdrift:hard_negative,agentdrift,1117,0.04297224709042077,0.23529411764705882
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),adclean,req_adclean,339,0.008849557522123894,0.010309278350515464
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),admatched,req_admatched,585,0.015384615384615385,0.015151515151515152
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),adshift,req_adshift,975,0.015384615384615385,0.015151515151515152
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),bipia_pairs,req_bipia_pairs,1200,0.0016666666666666668,0.0016666666666666668
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),tbeval,reqtask_tbeval,1533,0.007827788649706457,0.011851851851851851
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),ours_opi,req_ours_opi,900,0.006666666666666667,0.3333333333333333
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),agentdrift:benign,agentdrift_req,2878,0.00034746351633078526,0.0019047619047619048
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),agentdrift:hard_negative,agentdrift_req,1117,0.1360787824529991,0.6274509803921569
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),ours_notinject (as content),req_ours_notinject_content,339,0.27728613569321536,
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),tbeval (simulator brief shown),req_tbeval,1533,0.0228310502283105,
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",adclean,req_adclean,339,0.038348082595870206,0.061855670103092786
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",admatched,req_admatched,585,0.02564102564102564,0.045454545454545456
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",adshift,req_adshift,975,0.02564102564102564,0.045454545454545456
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",bipia_pairs,req_bipia_pairs,1200,0.0016666666666666668,0.0016666666666666668
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",tbeval,reqtask_tbeval,1533,0.21135029354207435,0.18074074074074073
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",ours_bipia,req_ours_bipia,778,0.0012853470437017994,0.0012853470437017994
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",ours_opi,req_ours_opi,900,0.0077777777777777776,0.3333333333333333
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",agentdrift:benign,agentdrift_req,2878,0.03509381514940931,0.03619047619047619
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",agentdrift:hard_negative,agentdrift_req,1117,0.17457475380483437,0.7107843137254902
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",ours_notinject (as content),req_ours_notinject_content,339,0.10029498525073746,
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)",tbeval (simulator brief shown),req_tbeval,1533,0.32615786040443573,
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),adclean,req_adclean,339,0.0058997050147492625,0.020618556701030927
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),admatched,req_admatched,585,0.005128205128205128,0.015151515151515152
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),adshift,req_adshift,975,0.005128205128205128,0.015151515151515152
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),bipia_pairs,req_bipia_pairs,1200,0.0033333333333333335,0.0033333333333333335
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),tbeval,reqtask_tbeval,1533,0.0091324200913242,0.013333333333333334
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),ours_opi,req_ours_opi,900,0.012222222222222223,0.3333333333333333
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),ours_recipes,req_ours_recipes,500,0.002,0.002
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),agentdrift:benign,agentdrift_req,2878,0.00034746351633078526,0.0019047619047619048
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),agentdrift:hard_negative,agentdrift_req,1117,0.13249776186213072,0.6127450980392157
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),ours_notinject (as content),req_ours_notinject_content,339,0.35988200589970504,
+wolf-req-s1,Wolf Defender + request pairs (notebook 03b) (seed 1),tbeval (simulator brief shown),req_tbeval,1533,0.0136986301369863,
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),adclean,req_adclean,339,0.02654867256637168,0.030927835051546393
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),admatched,req_admatched,585,0.015384615384615385,0.015151515151515152
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),adshift,req_adshift,975,0.015384615384615385,0.015151515151515152
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),bipia_pairs,req_bipia_pairs,1200,0.0025,0.0025
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),tbeval,reqtask_tbeval,1533,0.0136986301369863,0.013333333333333334
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),ours_opi,req_ours_opi,900,0.0044444444444444444,0.3333333333333333
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),ours_recipes,req_ours_recipes,500,0.002,0.002
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),agentdrift:benign,agentdrift_req,2878,0.00034746351633078526,0.0019047619047619048
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),agentdrift:hard_negative,agentdrift_req,1117,0.11996418979409132,0.5882352941176471
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),ours_notinject (as content),req_ours_notinject_content,339,0.16224188790560473,
+wolf-req-s2,Wolf Defender + request pairs (notebook 03b) (seed 2),tbeval (simulator brief shown),req_tbeval,1533,0.018917155903457272,
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),adclean,req_adclean,339,0.008849557522123894,0.030927835051546393
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),admatched,req_admatched,585,0.005128205128205128,0.015151515151515152
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),adshift,req_adshift,975,0.005128205128205128,0.015151515151515152
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),bipia_pairs,req_bipia_pairs,1200,0.004166666666666667,0.004166666666666667
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),tbeval,reqtask_tbeval,1533,0.0091324200913242,0.01037037037037037
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),ours_opi,req_ours_opi,900,0.02,0.3333333333333333
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),agentdrift:benign,agentdrift_req,2878,0.0031271716469770676,0.017142857142857144
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),agentdrift:hard_negative,agentdrift_req,1117,0.1647269471799463,0.7401960784313726
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),ours_notinject (as content),req_ours_notinject_content,339,0.2153392330383481,
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),tbeval (simulator brief shown),req_tbeval,1533,0.0136986301369863,
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),adclean,req_adclean,339,0.0029498525073746312,0.010309278350515464
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),admatched,req_admatched,585,0.005128205128205128,0.015151515151515152
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),adshift,req_adshift,975,0.005128205128205128,0.015151515151515152
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),bipia_pairs,req_bipia_pairs,1200,0.005,0.005
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),tbeval,reqtask_tbeval,1533,0.005218525766470972,0.008888888888888889
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),ours_opi,req_ours_opi,900,0.012222222222222223,0.3333333333333333
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),ours_notinject,req_ours_notinject,339,0.0029498525073746312,0.0029498525073746312
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),ours_recipes,req_ours_recipes,500,0.002,0.002
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),agentdrift:benign,agentdrift_req,2878,0.002432244614315497,0.013333333333333334
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),agentdrift:hard_negative,agentdrift_req,1117,0.1486123545210385,0.6764705882352942
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),ours_notinject (as content),req_ours_notinject_content,339,0.20353982300884957,
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),tbeval (simulator brief shown),req_tbeval,1533,0.0136986301369863,
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),adclean,req_adclean,339,0.0029498525073746312,0.010309278350515464
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),admatched,req_admatched,585,0.0,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),adshift,req_adshift,975,0.0,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),bipia_pairs,req_bipia_pairs,1200,0.0033333333333333335,0.0033333333333333335
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),tbeval,reqtask_tbeval,1533,0.016307893020221786,0.01037037037037037
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),ours_opi,req_ours_opi,900,0.0077777777777777776,0.3333333333333333
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),agentdrift:benign,agentdrift_req,2878,0.0006949270326615705,0.0038095238095238095
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),agentdrift:hard_negative,agentdrift_req,1117,0.1566696508504924,0.696078431372549
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),ours_notinject (as content),req_ours_notinject_content,339,0.21238938053097345,
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),tbeval (simulator brief shown),req_tbeval,1533,0.018917155903457272,
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",adclean,adclean,339,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",admatched,admatched,585,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",adshift,adshift,975,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",bipia_pairs,bipia_pairs,1200,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",tbeval,tbeval,1533,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_bipia,ours_bipia,778,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_opi,ours_opi,900,0.0011111111111111111,0.16666666666666666
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_agentdojo,ours_agentdojo,129,0.05426356589147287,0.5
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_notinject,ours_notinject,339,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_recipes,ours_recipes,500,0.0,0.0

@@ -1,0 +1,25 @@
+detector,detector_name,suite,n_injected,caught_0_5,n_benign,flagged_0_5
+wolf-defender,"Wolf Defender (released, content only)",banking,48,1.0,51,0.0
+wolf-defender,"Wolf Defender (released, content only)",slack,87,0.9885057471264368,207,0.0
+wolf-defender,"Wolf Defender (released, content only)",travel,90,0.9666666666666667,282,0.0
+wolf-defender,"Wolf Defender (released, content only)",workspace,207,0.714975845410628,45,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",banking,48,1.0,51,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",slack,87,1.0,207,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",travel,90,0.9666666666666667,282,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",workspace,207,0.7536231884057971,45,0.13333333333333333
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),banking,48,1.0,51,0.0
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),slack,87,0.9885057471264368,207,0.0
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),travel,90,0.5444444444444444,282,0.031914893617021274
+wolf-req-s0,Wolf Defender + request pairs (notebook 03b) (seed 0),workspace,207,0.7294685990338164,45,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),banking,48,1.0,51,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),slack,87,1.0,207,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),travel,90,0.5111111111111111,282,0.0
+wolf-busy-s0,Wolf Defender + request and busy-request pairs (03c) (seed 0),workspace,207,0.6328502415458938,45,0.06666666666666667
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),banking,48,0.9791666666666666,51,0.0
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),slack,87,0.9425287356321839,207,0.0
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),travel,90,0.5555555555555556,282,0.010638297872340425
+wolf-busy-s1,Wolf Defender + request and busy-request pairs (03c) (seed 1),workspace,207,0.7053140096618358,45,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),banking,48,0.9583333333333334,51,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),slack,87,0.9655172413793104,207,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),travel,90,0.5444444444444444,282,0.0
+wolf-busy-s2,Wolf Defender + request and busy-request pairs (03c) (seed 2),workspace,207,0.7198067632850241,45,0.0

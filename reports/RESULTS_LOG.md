@@ -536,3 +536,158 @@ wolf-req_nopairs-s0       2768             3164          0.0211                 
         wolf-req-s1       2373             3164          0.0612                     0.0000                    0.0330              0.0  18.2888
         wolf-req-s2       3164             3164          0.0400                     0.0012                    0.0133              0.0  18.4318
 ```
+
+
+---
+## nb03c: busy-request pairs on Wolf Defender, AgentDrift held out
+_2026-11-21 08:19_
+
+```
+Notebook 03c: busy-request pairs on Wolf Defender. Decision: DOES NOT CLOSE THE BLIND SPOT; FAILS THE HELD-OUT AGENT TEST
+Busy-request pairs (R2, AgentDrift): THE BUSY-REQUEST PAIRS DO NOT SEPARATE
+Stop rule (plan_03c.md): H1 failed, so no further training version is built from these sets.
+
+base patronus-studio/wolf-defender-prompt-injection @ af0b16a1d40ca246595e48246ccf9f906a52a50e; decision read on Wolf Defender + request and busy-request pairs (03c) (seed 0); Liu rule (threshold on the evaluated benign set); paired cluster bootstraps;
+request models read each set with its request (tau-bench through the task part of the simulator brief; AgentDrift with the trajectory's task);
+the released weights and notebook 03's model read the content alone. AgentDojo is development data from this notebook on; AgentDrift is held out.
+AgentDrift test split (task-disjoint) at commit 014a514fa998, downloaded after the plan commit 25c5c6d: {'trajectories': 1722, 'steps': 9796, 'tasks': 35, 'role_after_poison': 1626, 'role_before_poison': 1427, 'role_hijacked': 1755, 'role_negative': 3995, 'role_positive': 993, 'hard_negative_steps': 1117}
+G1 scorer check (released weights at the pinned revision against notebook 01 on AD-Clean): largest difference 0.0000 (agrees)
+pack: 03b's 25301 rows, 20384 kept, 4917 busy rows added
+
+--- Wolf Defender + request and busy-request pairs (03c) (seed 0): fails M1, M2, H1
+  M1 FAIL: second source caught 0.540 (target 0.9); minus released +0.093 [-0.026, +0.290]
+  M2 FAIL: admatched 0.762 vs 0.882, diff -0.120 [-0.205, -0.047] FAIL; adshift 0.744 vs 0.882, diff -0.137 [-0.312, -0.046] FAIL; tbeval 1.000 vs 1.000, diff +0.000 [-0.010, +0.000]
+  M3 pass: bipia_pairs 0.871 vs 0.835, diff +0.036 [+0.013, +0.057]; ours_bipia:hijack 0.913 vs 0.920, diff -0.007 [-0.031, +0.015]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.009 (cap 0.01, released 0.000); tbeval 0.009 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.000 vs 0.588, diff -0.588 [-0.656, -0.411] FAIL; false positives at 0.5 on benign steps 0.003 (released 0.000), on hard-negative steps 0.165 FAIL (released 0.107) (caps 0.01)
+--- Wolf Defender + request and busy-request pairs (03c) (seed 1): fails M1, M2, H1
+  M1 FAIL: second source caught 0.541 (target 0.9); minus released +0.094 [-0.113, +0.362]
+  M2 FAIL: admatched 0.764 vs 0.882, diff -0.118 [-0.305, -0.014] FAIL; adshift 0.703 vs 0.882, diff -0.179 [-0.479, -0.025] FAIL; tbeval 0.988 vs 1.000, diff -0.012 [-0.023, +0.000]
+  M3 pass: bipia_pairs 0.847 vs 0.835, diff +0.012 [-0.006, +0.036]; ours_bipia:hijack 0.913 vs 0.920, diff -0.007 [-0.032, +0.014]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.003 (cap 0.01, released 0.000); tbeval 0.005 (cap 0.01, released 0.000); ours_recipes 0.002 (cap 0.01, released 0.000); ours_notinject 0.003 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.208 vs 0.588, diff -0.380 [-0.463, -0.293] FAIL; false positives at 0.5 on benign steps 0.002 (released 0.000), on hard-negative steps 0.149 FAIL (released 0.107) (caps 0.01)
+--- Wolf Defender + request and busy-request pairs (03c) (seed 2): fails M1, M2, M3, M4, H1
+  M1 FAIL: second source caught 0.572 (target 0.9); minus released +0.126 [-0.034, +0.259]
+  M2 FAIL: admatched 0.806 vs 0.882, diff -0.076 [-0.129, -0.027] FAIL; adshift 0.804 vs 0.882, diff -0.078 [-0.125, -0.029] FAIL; tbeval 0.991 vs 1.000, diff -0.009 [-0.041, +0.000]
+  M3 FAIL: bipia_pairs 0.851 vs 0.835, diff +0.016 [-0.007, +0.037]; ours_bipia:hijack 0.873 vs 0.920, diff -0.047 [-0.086, -0.014] FAIL; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.003 (cap 0.01, released 0.000); tbeval 0.016 (cap 0.01, released 0.000) FAIL; ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.144 vs 0.588, diff -0.444 [-0.519, -0.346] FAIL; false positives at 0.5 on benign steps 0.001 (released 0.000), on hard-negative steps 0.157 FAIL (released 0.107) (caps 0.01)
+--- Wolf Defender + request pairs (notebook 03b) (seed 0): fails M1, M2, M3, H1
+  M1 FAIL: second source caught 0.823 (target 0.9); minus released +0.377 [+0.229, +0.482]
+  M2 FAIL: admatched 0.708 vs 0.882, diff -0.174 [-0.227, -0.037] FAIL; adshift 0.662 vs 0.882, diff -0.219 [-0.274, -0.040] FAIL; tbeval 0.993 vs 1.000, diff -0.007 [-0.018, +0.000]
+  M3 FAIL: bipia_pairs 0.852 vs 0.835, diff +0.017 [-0.015, +0.036]; ours_bipia:hijack 0.893 vs 0.920, diff -0.027 [-0.061, +0.006] FAIL; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.009 (cap 0.01, released 0.000); tbeval 0.008 (cap 0.01, released 0.000); ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.102 vs 0.588, diff -0.486 [-0.616, -0.394] FAIL; false positives at 0.5 on benign steps 0.000 (released 0.000), on hard-negative steps 0.136 FAIL (released 0.107) (caps 0.01)
+--- Wolf Defender + requests, no request pairs (notebook 03b) (seed 0): fails M1, M2, M4, H1
+  M1 FAIL: second source caught 0.879 (target 0.9); minus released +0.432 [+0.298, +0.497]
+  M2 FAIL: admatched 0.796 vs 0.882, diff -0.086 [-0.186, +0.031] FAIL; adshift 0.786 vs 0.882, diff -0.096 [-0.197, +0.032] FAIL; tbeval 0.000 vs 1.000, diff -1.000 [-1.000, -0.166] FAIL
+  M3 pass: bipia_pairs 0.895 vs 0.835, diff +0.060 [+0.043, +0.081]; ours_bipia:hijack 0.907 vs 0.920, diff -0.013 [-0.045, +0.014]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.038 (cap 0.01, released 0.000) FAIL; tbeval 0.211 (cap 0.01, released 0.000) FAIL; ours_recipes 0.000 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.350 vs 0.588, diff -0.238 [-0.614, -0.156] FAIL; false positives at 0.5 on benign steps 0.035 FAIL (released 0.000), on hard-negative steps 0.175 FAIL (released 0.107) (caps 0.01)
+--- Wolf Defender + request pairs (notebook 03b) (seed 1): fails M1, M2, H1
+  M1 FAIL: second source caught 0.712 (target 0.9); minus released +0.266 [+0.118, +0.423]
+  M2 FAIL: admatched 0.764 vs 0.882, diff -0.118 [-0.184, -0.028] FAIL; adshift 0.725 vs 0.882, diff -0.157 [-0.233, -0.029] FAIL; tbeval 0.962 vs 1.000, diff -0.038 [-0.075, -0.019] FAIL
+  M3 pass: bipia_pairs 0.864 vs 0.835, diff +0.030 [+0.013, +0.050]; ours_bipia:hijack 0.913 vs 0.920, diff -0.007 [-0.030, +0.021]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 pass: adclean 0.006 (cap 0.01, released 0.000); tbeval 0.009 (cap 0.01, released 0.000); ours_recipes 0.002 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.126 vs 0.588, diff -0.462 [-0.571, -0.360] FAIL; false positives at 0.5 on benign steps 0.000 (released 0.000), on hard-negative steps 0.132 FAIL (released 0.107) (caps 0.01)
+--- Wolf Defender + request pairs (notebook 03b) (seed 2): fails M1, M2, M4, H1
+  M1 FAIL: second source caught 0.730 (target 0.9); minus released +0.283 [+0.215, +0.375]
+  M2 FAIL: admatched 0.736 vs 0.882, diff -0.146 [-0.210, -0.019] FAIL; adshift 0.706 vs 0.882, diff -0.176 [-0.247, -0.019] FAIL; tbeval 0.964 vs 1.000, diff -0.036 [-0.057, -0.010] FAIL
+  M3 pass: bipia_pairs 0.854 vs 0.835, diff +0.019 [+0.001, +0.040]; ours_bipia:hijack 0.907 vs 0.920, diff -0.013 [-0.040, +0.013]; ours_bipia:harmful 0.950 vs 0.950, diff +0.000 [+0.000, +0.000]
+  M4 FAIL: adclean 0.027 (cap 0.01, released 0.000) FAIL; tbeval 0.014 (cap 0.01, released 0.000) FAIL; ours_recipes 0.002 (cap 0.01, released 0.000); ours_notinject 0.000 (cap 0.05, released 0.029)
+  H1 FAIL: AgentDrift caught 0.236 vs 0.588, diff -0.352 [-0.606, -0.178] FAIL; false positives at 0.5 on benign steps 0.000 (released 0.000), on hard-negative steps 0.120 FAIL (released 0.107) (caps 0.01)
+
+R2 Wolf Defender + request and busy-request pairs (03c) (seed 0) minus Wolf Defender + request pairs (notebook 03b) (seed 0) on AgentDrift, paired: -0.102 [-0.155, +0.048]
+   the same on AD-Matched (development): +0.053 [-0.092, +0.116]
+
+paired differences of the busy model (seed 0) on the main sets:
+  minus Wolf Defender (released, content only): ours_bipia:hijack -0.007 [-0.031, +0.015]; ours_bipia:harmful +0.000 [+0.000, +0.000]; ours_opi +0.093 [-0.026, +0.290]; ours_agentdojo:all -0.399 [-0.544, -0.364]; admatched -0.120 [-0.205, -0.047]; adshift -0.137 [-0.312, -0.046]; bipia_pairs +0.036 [+0.013, +0.057]; tbeval +0.000 [-0.010, +0.000]; agentdrift -0.588 [-0.656, -0.411]
+  minus Wolf Defender + request pairs (notebook 03b) (seed 0): ours_bipia:hijack +0.020 [-0.007, +0.051]; ours_bipia:harmful +0.000 [+0.000, +0.000]; ours_opi -0.283 [-0.405, -0.107]; ours_agentdojo:all -0.258 [-0.340, -0.233]; admatched +0.053 [-0.092, +0.116]; adshift +0.082 [-0.192, +0.160]; bipia_pairs +0.018 [+0.003, +0.040]; tbeval +0.007 [-0.001, +0.017]; agentdrift -0.102 [-0.155, +0.048]
+  minus Wolf Defender + matched pairs, content only (notebook 03, seed 0): ours_bipia:hijack -0.013 [-0.038, +0.013]; ours_bipia:harmful +0.000 [+0.000, +0.000]; ours_opi -0.257 [-0.362, -0.071]; ours_agentdojo:all +0.516 [+0.361, +0.541]; admatched +0.762 [-0.144, +0.807]; adshift +0.744 [-0.144, +0.792]; bipia_pairs -0.001 [-0.021, +0.015]; tbeval +0.000 [-0.010, +0.000]; agentdrift -0.506 [-0.608, -0.330]
+  minus Wolf Defender (released, request shown): ours_bipia:hijack +0.007 [+0.000, +0.021]; ours_bipia:harmful +0.000 [+0.000, +0.000]; ours_opi +0.050 [-0.102, +0.272]; ours_agentdojo:all -0.351 [-0.495, -0.315]; admatched -0.081 [-0.174, +0.080]; adshift -0.112 [-0.290, +0.037]; bipia_pairs -0.041 [-0.071, -0.006]; tbeval +0.048 [+0.017, +0.082]; agentdrift -0.517 [-0.610, -0.358]
+
+caught at 1 percent false positives (Liu rule):
+set                                                                 ours_bipia:hijack  ours_bipia:harmful  ours_opi  ours_agentdojo:all  admatched  adshift  bipia_pairs  tbeval  agentdrift
+detector_name                                                                                                                                                                               
+Wolf Defender (released, content only)                                          0.920                0.95     0.447               0.915      0.882    0.882        0.835   1.000       0.588
+Wolf Defender (released, request shown)                                         0.907                0.95     0.490               0.868      0.843    0.857        0.912   0.952       0.517
+Wolf Defender + matched pairs, content only (notebook 03, seed 0)               0.927                0.95     0.797               0.000      0.000    0.000        0.871   1.000       0.506
+Wolf Defender + request pairs (notebook 03b) (seed 0)                           0.893                0.95     0.823               0.774      0.708    0.662        0.852   0.993       0.102
+Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)              0.907                0.95     0.879               0.000      0.796    0.786        0.895   0.000       0.350
+Wolf Defender + request pairs (notebook 03b) (seed 1)                           0.913                0.95     0.712               0.000      0.764    0.725        0.864   0.962       0.126
+Wolf Defender + request pairs (notebook 03b) (seed 2)                           0.907                0.95     0.730               0.000      0.736    0.706        0.854   0.964       0.236
+Wolf Defender + request and busy-request pairs (03c) (seed 0)                   0.913                0.95     0.540               0.516      0.762    0.744        0.871   1.000       0.000
+Wolf Defender + request and busy-request pairs (03c) (seed 1)                   0.913                0.95     0.541               0.690      0.764    0.703        0.847   0.988       0.208
+Wolf Defender + request and busy-request pairs (03c) (seed 2)                   0.873                0.95     0.572               0.783      0.806    0.804        0.851   0.991       0.144
+Matched-pair guard, DeBERTa from scratch (seed 0, windowed)                     0.887                1.00     0.973               0.169      0.329    0.282        0.638   0.464         NaN
+
+AUROC:
+set                                                                 ours_bipia:hijack  ours_bipia:harmful  ours_opi  ours_agentdojo:all  admatched  adshift  bipia_pairs  tbeval  agentdrift
+detector_name                                                                                                                                                                               
+Wolf Defender (released, content only)                                          0.993               0.993     0.884               0.996      0.898    0.898        0.956   1.000       0.902
+Wolf Defender (released, request shown)                                         0.988               0.991     0.938               0.994      0.928    0.928        0.991   0.998       0.900
+Wolf Defender + matched pairs, content only (notebook 03, seed 0)               0.996               0.996     0.960               0.972      0.942    0.942        0.958   1.000       0.869
+Wolf Defender + request pairs (notebook 03b) (seed 0)                           0.991               0.995     0.987               0.985      0.947    0.942        0.953   1.000       0.902
+Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)              0.994               0.996     0.990               0.967      0.925    0.925        0.975   0.983       0.879
+Wolf Defender + request pairs (notebook 03b) (seed 1)                           0.993               0.993     0.988               0.977      0.955    0.955        0.958   0.999       0.895
+Wolf Defender + request pairs (notebook 03b) (seed 2)                           0.992               0.994     0.969               0.986      0.954    0.952        0.961   0.999       0.897
+Wolf Defender + request and busy-request pairs (03c) (seed 0)                   0.977               0.979     0.977               0.968      0.962    0.956        0.968   1.000       0.896
+Wolf Defender + request and busy-request pairs (03c) (seed 1)                   0.983               0.990     0.979               0.980      0.972    0.968        0.959   1.000       0.904
+Wolf Defender + request and busy-request pairs (03c) (seed 2)                   0.965               0.978     0.958               0.980      0.964    0.958        0.953   1.000       0.898
+Matched-pair guard, DeBERTa from scratch (seed 0, windowed)                     0.964               1.000     0.995               0.832      0.660    0.652        0.756   0.915         NaN
+
+false positives at 0.5 on clean outputs (request models read tau-bench through the task request; the brief as 03b showed it is reported beside):
+set                                                                 adclean  tbeval  tbeval (simulator brief shown)  ours_recipes  ours_notinject  ours_notinject (as content)  agentdrift:benign  agentdrift:hard_negative  admatched
+detector_name                                                                                                                                                                                                                         
+Wolf Defender (released, content only)                                0.000   0.000                             NaN         0.000           0.029                          NaN              0.000                     0.107      0.000
+Wolf Defender (released, request shown)                               0.027   0.226                           0.412         0.000           0.342                        0.171              0.011                     0.172      0.021
+Wolf Defender + matched pairs, content only (notebook 03, seed 0)     0.009   0.000                             NaN         0.000           0.000                          NaN              0.000                     0.043      0.010
+Wolf Defender + request pairs (notebook 03b) (seed 0)                 0.009   0.008                           0.023         0.000           0.000                        0.277              0.000                     0.136      0.015
+Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)    0.038   0.211                           0.326         0.000           0.000                        0.100              0.035                     0.175      0.026
+Wolf Defender + request pairs (notebook 03b) (seed 1)                 0.006   0.009                           0.014         0.002           0.000                        0.360              0.000                     0.132      0.005
+Wolf Defender + request pairs (notebook 03b) (seed 2)                 0.027   0.014                           0.019         0.002           0.000                        0.162              0.000                     0.120      0.015
+Wolf Defender + request and busy-request pairs (03c) (seed 0)         0.009   0.009                           0.014         0.000           0.000                        0.215              0.003                     0.165      0.005
+Wolf Defender + request and busy-request pairs (03c) (seed 1)         0.003   0.005                           0.014         0.002           0.003                        0.204              0.002                     0.149      0.005
+Wolf Defender + request and busy-request pairs (03c) (seed 2)         0.003   0.016                           0.019         0.000           0.000                        0.212              0.001                     0.157      0.000
+Matched-pair guard, DeBERTa from scratch (seed 0, windowed)           0.000   0.000                             NaN         0.000           0.000                          NaN                NaN                       NaN      0.000
+
+AgentDrift (held out), caught at 1 percent by compliance pattern, as released and masked:
+view                                                               as released                                                                                       masked                                                                                      
+slice                                                                      all pattern:delayed_execution pattern:full_hijack pattern:partial_hijack pattern:resisted    all pattern:delayed_execution pattern:full_hijack pattern:partial_hijack pattern:resisted
+detector_name                                                                                                                                                                                                                                                    
+Wolf Defender (released, content only)                                   0.588                     0.034               0.824                  0.159            0.807  0.693                     0.051               0.933                  0.264            0.950
+Wolf Defender (released, request shown)                                  0.517                     0.026               0.738                  0.106            0.716  0.668                     0.026               0.918                  0.207            0.936
+Wolf Defender + matched pairs, content only (notebook 03, seed 0)        0.506                     0.034               0.729                  0.048            0.734  0.580                     0.051               0.833                  0.038            0.858
+Wolf Defender + request pairs (notebook 03b) (seed 0)                    0.102                     0.009               0.080                  0.091            0.206  0.251                     0.009               0.331                  0.101            0.408
+Wolf Defender + requests, no request pairs (notebook 03b) (seed 0)       0.350                     0.026               0.451                  0.058            0.596  0.392                     0.026               0.520                  0.043            0.656
+Wolf Defender + request pairs (notebook 03b) (seed 1)                    0.126                     0.009               0.118                  0.101            0.229  0.256                     0.017               0.258                  0.173            0.459
+Wolf Defender + request pairs (notebook 03b) (seed 2)                    0.236                     0.017               0.296                  0.096            0.362  0.435                     0.017               0.553                  0.139            0.697
+Wolf Defender + request and busy-request pairs (03c) (seed 0)            0.000                     0.000               0.000                  0.000            0.000  0.213                     0.017               0.224                  0.327            0.188
+Wolf Defender + request and busy-request pairs (03c) (seed 1)            0.208                     0.009               0.073                  0.351            0.459  0.316                     0.017               0.191                  0.380            0.674
+Wolf Defender + request and busy-request pairs (03c) (seed 2)            0.144                     0.009               0.076                  0.250            0.257  0.206                     0.009               0.164                  0.260            0.349
+
+AgentDojo AD-Matched by suite (development), caught and flagged at 0.5:
+suite                                                              banking  slack  travel  workspace
+detector_name                                                                                       
+Wolf Defender (released, content only)                               1.000  0.989   0.967      0.715
+Wolf Defender + matched pairs, content only (notebook 03, seed 0)    1.000  1.000   0.967      0.754
+Wolf Defender + request and busy-request pairs (03c) (seed 0)        1.000  1.000   0.511      0.633
+Wolf Defender + request and busy-request pairs (03c) (seed 1)        0.979  0.943   0.556      0.705
+Wolf Defender + request and busy-request pairs (03c) (seed 2)        0.958  0.966   0.544      0.720
+Wolf Defender + request pairs (notebook 03b) (seed 0)                1.000  0.989   0.544      0.729
+
+suite                                                              banking  slack  travel  workspace
+detector_name                                                                                       
+Wolf Defender (released, content only)                                 0.0    0.0   0.000      0.000
+Wolf Defender + matched pairs, content only (notebook 03, seed 0)      0.0    0.0   0.000      0.133
+Wolf Defender + request and busy-request pairs (03c) (seed 0)          0.0    0.0   0.000      0.067
+Wolf Defender + request and busy-request pairs (03c) (seed 1)          0.0    0.0   0.011      0.000
+Wolf Defender + request and busy-request pairs (03c) (seed 2)          0.0    0.0   0.000      0.000
+Wolf Defender + request pairs (notebook 03b) (seed 0)                  0.0    0.0   0.032      0.000
+
+training runs (checkpoint with the lowest macro validation loss):
+       model  best_step  optimizer_steps  val_loss_macro  loss_inject_busy  loss_authorised_busy  loss_host_busy  fpr05_val_hosts  minutes
+wolf-busy-s0       3164             3164          0.0578            0.3183                0.0002          0.0002              0.0  20.7389
+wolf-busy-s1       1186             3164          0.0472            0.1141                0.0061          0.0144              0.0  20.5743
+wolf-busy-s2       1582             3164          0.0634            0.2768                0.0002          0.0002              0.0  20.4578
+```
