@@ -1,0 +1,86 @@
+detector,detector_name,set,read_on,n_benign,fpr_0_5,block_rate_0_5
+wolf-defender,"Wolf Defender (released, content only)",adclean,adclean,339,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",admatched,admatched,585,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",adshift,adshift,975,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",bipia_pairs,bipia_pairs,1200,0.0008333333333333334,0.0008333333333333334
+wolf-defender,"Wolf Defender (released, content only)",tbeval,tbeval,1533,0.0,0.0
+wolf-defender,"Wolf Defender (released, content only)",ours_bipia,ours_bipia,778,0.0012853470437017994,0.0012853470437017994
+wolf-defender,"Wolf Defender (released, content only)",ours_opi,ours_opi,900,0.04,0.3333333333333333
+wolf-defender,"Wolf Defender (released, content only)",ours_agentdojo,ours_agentdojo,129,0.046511627906976744,0.25
+wolf-defender,"Wolf Defender (released, content only)",ours_notinject,ours_notinject,339,0.029498525073746312,0.029498525073746312
+wolf-defender,"Wolf Defender (released, content only)",ours_recipes,ours_recipes,500,0.0,0.0
+wolf-defender:req,"Wolf Defender (released, request shown)",adclean,req_adclean,339,0.02654867256637168,0.08247422680412371
+wolf-defender:req,"Wolf Defender (released, request shown)",admatched,req_admatched,585,0.020512820512820513,0.06060606060606061
+wolf-defender:req,"Wolf Defender (released, request shown)",adshift,req_adshift,975,0.020512820512820513,0.06060606060606061
+wolf-defender:req,"Wolf Defender (released, request shown)",bipia_pairs,req_bipia_pairs,1200,0.020833333333333332,0.020833333333333332
+wolf-defender:req,"Wolf Defender (released, request shown)",tbeval,req_tbeval,1533,0.4116112198303979,0.4725925925925926
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_bipia,req_ours_bipia,778,0.006426735218508998,0.006426735218508998
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_opi,req_ours_opi,900,0.058888888888888886,0.5
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_agentdojo,req_ours_agentdojo,129,0.046511627906976744,0.25
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_notinject,req_ours_notinject,339,0.3421828908554572,0.3421828908554572
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-defender:req,"Wolf Defender (released, request shown)",ours_notinject (as content),req_ours_notinject_content,339,0.1710914454277286,0.1710914454277286
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",adclean,adclean,339,0.008849557522123894,0.030927835051546393
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",admatched,admatched,585,0.010256410256410256,0.030303030303030304
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",adshift,adshift,975,0.010256410256410256,0.030303030303030304
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",bipia_pairs,bipia_pairs,1200,0.0008333333333333334,0.0008333333333333334
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",tbeval,tbeval,1533,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_bipia,ours_bipia,778,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_opi,ours_opi,900,0.005555555555555556,0.3333333333333333
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_agentdojo,ours_agentdojo,129,0.09302325581395349,0.75
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_notinject,ours_notinject,339,0.0,0.0
+wolf-twin-s0,"Wolf Defender + matched pairs, content only (notebook 03, seed 0)",ours_recipes,ours_recipes,500,0.0,0.0
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),adclean,req_adclean,339,0.008849557522123894,0.010309278350515464
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),admatched,req_admatched,585,0.015384615384615385,0.015151515151515152
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),adshift,req_adshift,975,0.015384615384615385,0.015151515151515152
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),bipia_pairs,req_bipia_pairs,1200,0.0016666666666666668,0.0016666666666666668
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),tbeval,req_tbeval,1533,0.0228310502283105,0.02962962962962963
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),ours_opi,req_ours_opi,900,0.006666666666666667,0.3333333333333333
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-req-s0,Wolf Defender + request-conditioned pairs (seed 0),ours_notinject (as content),req_ours_notinject_content,339,0.27728613569321536,0.27728613569321536
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",adclean,req_adclean,339,0.038348082595870206,0.061855670103092786
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",admatched,req_admatched,585,0.02564102564102564,0.045454545454545456
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",adshift,req_adshift,975,0.02564102564102564,0.045454545454545456
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",bipia_pairs,req_bipia_pairs,1200,0.0016666666666666668,0.0016666666666666668
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",tbeval,req_tbeval,1533,0.32615786040443573,0.32592592592592595
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",ours_bipia,req_ours_bipia,778,0.0012853470437017994,0.0012853470437017994
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",ours_opi,req_ours_opi,900,0.0077777777777777776,0.3333333333333333
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",ours_recipes,req_ours_recipes,500,0.0,0.0
+wolf-req_nopairs-s0,"Wolf Defender + requests, no request pairs (seed 0)",ours_notinject (as content),req_ours_notinject_content,339,0.10029498525073746,0.10029498525073746
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),adclean,req_adclean,339,0.0058997050147492625,0.020618556701030927
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),admatched,req_admatched,585,0.005128205128205128,0.015151515151515152
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),adshift,req_adshift,975,0.005128205128205128,0.015151515151515152
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),bipia_pairs,req_bipia_pairs,1200,0.0033333333333333335,0.0033333333333333335
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),tbeval,req_tbeval,1533,0.0136986301369863,0.022222222222222223
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),ours_opi,req_ours_opi,900,0.012222222222222223,0.3333333333333333
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),ours_recipes,req_ours_recipes,500,0.002,0.002
+wolf-req-s1,Wolf Defender + request-conditioned pairs (seed 1),ours_notinject (as content),req_ours_notinject_content,339,0.35988200589970504,0.35988200589970504
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),adclean,req_adclean,339,0.02654867256637168,0.030927835051546393
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),admatched,req_admatched,585,0.015384615384615385,0.015151515151515152
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),adshift,req_adshift,975,0.015384615384615385,0.015151515151515152
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),bipia_pairs,req_bipia_pairs,1200,0.0025,0.0025
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),tbeval,req_tbeval,1533,0.018917155903457272,0.02074074074074074
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),ours_bipia,req_ours_bipia,778,0.0,0.0
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),ours_opi,req_ours_opi,900,0.0044444444444444444,0.3333333333333333
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),ours_agentdojo,req_ours_agentdojo,129,0.09302325581395349,0.75
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),ours_notinject,req_ours_notinject,339,0.0,0.0
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),ours_recipes,req_ours_recipes,500,0.002,0.002
+wolf-req-s2,Wolf Defender + request-conditioned pairs (seed 2),ours_notinject (as content),req_ours_notinject_content,339,0.16224188790560473,0.16224188790560473
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",adclean,adclean,339,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",admatched,admatched,585,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",adshift,adshift,975,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",bipia_pairs,bipia_pairs,1200,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",tbeval,tbeval,1533,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_bipia,ours_bipia,778,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_opi,ours_opi,900,0.0011111111111111111,0.16666666666666666
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_agentdojo,ours_agentdojo,129,0.05426356589147287,0.5
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_notinject,ours_notinject,339,0.0,0.0
+wani-full-s0:win,"Matched-pair guard, DeBERTa from scratch (seed 0, windowed)",ours_recipes,ours_recipes,500,0.0,0.0

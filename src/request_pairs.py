@@ -355,7 +355,7 @@ def convert_structural(rows, rng, pairs=True, n_short=1500, split=""):
 # ----------------------------------------------------------------------------------------------------------------------
 def check_pack(rows, pairs=True):
     """Labels follow FORMS; paired forms share content with an inject row; a delegation pair differs only in the request;
-    placeholders scrubbed in requests and contents."""
+    placeholders scrubbed in everything this repository generates."""
     by_cid = defaultdict(list)
     for r in rows:
         assert r["label"] == FORMS[r["form"]], (r["form"], r["label"])
@@ -370,7 +370,10 @@ def check_pack(rows, pairs=True):
             assert a["content"] == b["content"] and a["request"] != b["request"], cid
     if not pairs:
         assert not any(r["form"] in PAIRED_FORMS for r in rows), "paired forms in a no-pairs pack"
-    check_scrubbed([r["request"] for r in rows] + [r["content"] for r in rows])
+    # placeholders are checked in the text this repository writes: every request, the agent pack's contents and the inserted
+    # units; the document pack's hosts are real SQuAD and AG News passages and keep the addresses they were published with
+    check_scrubbed([r["request"] for r in rows] + [r["content"] for r in rows if r.get("pack") == "agent"] +
+                   [r["unit"] for r in rows if r.get("pack") == "structural" and r.get("unit")])
     return True
 
 
